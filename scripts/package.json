@@ -1,0 +1,11 @@
+{
+  "name": "kmc-motivational-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-reel": "node build-reel.js"
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0"
+  }
+}

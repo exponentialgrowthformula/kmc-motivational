@@ -1,0 +1,12 @@
+# MCP config — contains live API credentials, never commit
+.mcp.json
+
+# Node
+scripts/node_modules/
+node_modules/
+
+# Build artifacts / QC frames
+scripts/_qc/
+scripts/archive/
+scripts/slides/
+scripts/stacked/

@@ -1,0 +1,1493 @@
+- generic [ref=e2]:
+  - region
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fjlbadano%2Fig-mcp
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=jlbadano%2Fig-mcp
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "jlbadano" [ref=e70] [cursor=pointer]:
+            - /url: /jlbadano
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "ig-mcp" [ref=e73] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fjlbadano%2Fig-mcp
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 28" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fjlbadano%2Fig-mcp
+                - img [ref=e82]
+                - text: Fork
+                - generic "28" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fjlbadano%2Fig-mcp
+                - img [ref=e88]
+                - text: Star
+                - generic "114 users starred this repository" [ref=e90]: "114"
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues 2" [ref=e99] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+              - generic "2" [ref=e104]
+          - listitem [ref=e105]:
+            - link "Pull requests 5" [ref=e106] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/pulls
+              - img [ref=e107]
+              - generic [ref=e109]: Pull requests
+              - generic "5" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Actions" [ref=e112] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/actions
+              - img [ref=e113]
+              - generic [ref=e115]: Actions
+          - listitem [ref=e116]:
+            - link "Projects" [ref=e117] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/projects
+              - img [ref=e118]
+              - generic [ref=e120]: Projects
+          - listitem [ref=e121]:
+            - link "Security and quality" [ref=e122] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/security
+              - img [ref=e123]
+              - generic [ref=e125]: Security and quality
+          - listitem [ref=e126]:
+            - link "Insights" [ref=e127] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/pulse
+              - img [ref=e128]
+              - generic [ref=e130]: Insights
+    - generic [ref=e143]:
+      - heading "jlbadano/ig-mcp" [level=1] [ref=e145]
+      - generic [ref=e146]:
+        - generic [ref=e149]:
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - button "main branch" [ref=e153] [cursor=pointer]:
+                - generic [ref=e154]:
+                  - generic [ref=e156]:
+                    - img [ref=e158]
+                    - generic [ref=e161]: main
+                  - generic:
+                    - img
+              - generic [ref=e162]:
+                - link "Go to Branches page" [ref=e163] [cursor=pointer]:
+                  - /url: /jlbadano/ig-mcp/branches
+                  - img [ref=e164]
+                - link "Go to Tags page" [ref=e166] [cursor=pointer]:
+                  - /url: /jlbadano/ig-mcp/tags
+                  - img [ref=e167]
+            - generic [ref=e169]:
+              - generic [ref=e173]:
+                - img [ref=e175]
+                - combobox "Go to file" [ref=e177]
+              - button "Code" [ref=e178] [cursor=pointer]:
+                - generic [ref=e179]:
+                  - generic:
+                    - img
+                  - generic [ref=e180]: Code
+                  - generic:
+                    - img
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - heading "Folders and files" [level=2] [ref=e183]
+              - table "Folders and files" [ref=e184]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e185]:
+                  - 'row "Latest commit dependabot[bot] commits by dependabot[bot] ci(deps): bump actions/download-artifact from 5 to 6 (#22) Open commit details failure Commit 549fbee · Oct 27, 20256 months ago History 46 Commits" [ref=e186]':
+                    - 'cell "Latest commit dependabot[bot] commits by dependabot[bot] ci(deps): bump actions/download-artifact from 5 to 6 (#22) Open commit details failure Commit 549fbee · Oct 27, 20256 months ago History 46 Commits" [ref=e187]':
+                      - generic [ref=e188]:
+                        - heading "Latest commit" [level=2] [ref=e189]
+                        - generic [ref=e190]:
+                          - generic [ref=e192]:
+                            - link "dependabot[bot]" [ref=e193] [cursor=pointer]:
+                              - /url: /apps/dependabot
+                              - img "dependabot[bot]" [ref=e194]
+                            - link "commits by dependabot[bot]" [ref=e195] [cursor=pointer]:
+                              - /url: /jlbadano/ig-mcp/commits?author=dependabot%5Bbot%5D
+                              - text: dependabot[bot]
+                          - generic [ref=e196]:
+                            - generic [ref=e198]:
+                              - 'link "ci(deps): bump actions/download-artifact from 5 to 6 (" [ref=e199] [cursor=pointer]':
+                                - /url: /jlbadano/ig-mcp/commit/549fbeedc7f4409556a88d9d462e5f7ea454ca6a
+                              - link "#22" [ref=e200] [cursor=pointer]:
+                                - /url: https://github.com/jlbadano/ig-mcp/pull/22
+                              - link ")" [ref=e201] [cursor=pointer]:
+                                - /url: /jlbadano/ig-mcp/commit/549fbeedc7f4409556a88d9d462e5f7ea454ca6a
+                            - button "Open commit details" [ref=e202] [cursor=pointer]:
+                              - img [ref=e203]
+                            - button "failure" [ref=e205] [cursor=pointer]:
+                              - img [ref=e206]
+                        - generic [ref=e208]:
+                          - generic [ref=e210]:
+                            - link "Commit 549fbee" [ref=e211] [cursor=pointer]:
+                              - /url: /jlbadano/ig-mcp/commit/549fbeedc7f4409556a88d9d462e5f7ea454ca6a
+                              - text: 549fbee
+                            - text: ·
+                            - generic "Oct 27, 2025, 10:04 AM EDT" [ref=e212]: Oct 27, 20256 months ago
+                          - generic [ref=e213]:
+                            - heading "History" [level=2] [ref=e214]
+                            - link "46 Commits" [ref=e215] [cursor=pointer]:
+                              - /url: /jlbadano/ig-mcp/commits/main/
+                              - generic [ref=e216]:
+                                - generic:
+                                  - img
+                                - generic [ref=e217]: 46 Commits
+                  - 'row ".github, (Directory) ci(deps): bump actions/download-artifact from 5 to 6 (#22) Oct 27, 20256 months ago" [ref=e218]':
+                    - cell ".github, (Directory)" [ref=e219]:
+                      - generic [ref=e220]:
+                        - img [ref=e221]
+                        - link ".github, (Directory)" [ref=e226] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/tree/main/.github
+                          - text: .github
+                    - 'cell "ci(deps): bump actions/download-artifact from 5 to 6 (#22)" [ref=e227]':
+                      - generic [ref=e229]:
+                        - 'link "ci(deps): bump actions/download-artifact from 5 to 6 (" [ref=e230] [cursor=pointer]':
+                          - /url: /jlbadano/ig-mcp/commit/549fbeedc7f4409556a88d9d462e5f7ea454ca6a
+                        - link "#22" [ref=e231] [cursor=pointer]:
+                          - /url: https://github.com/jlbadano/ig-mcp/pull/22
+                        - link ")" [ref=e232] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/commit/549fbeedc7f4409556a88d9d462e5f7ea454ca6a
+                    - cell "Oct 27, 20256 months ago" [ref=e233]:
+                      - generic [ref=e234]: Oct 27, 20256 months ago
+                  - 'row "config, (Directory) Initial commit: Instagram MCP Server - Complete MCP server implementa… May 30, 202511 months ago" [ref=e235]':
+                    - cell "config, (Directory)" [ref=e236]:
+                      - generic [ref=e237]:
+                        - img [ref=e238]
+                        - link "config, (Directory)" [ref=e243] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/tree/main/config
+                          - text: config
+                    - 'cell "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e244]':
+                      - 'link "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e247] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a9be5be96a180c98afbfd8ca9f263e7a36f52d26
+                    - cell "May 30, 202511 months ago" [ref=e248]:
+                      - generic [ref=e249]: May 30, 202511 months ago
+                  - 'row "examples, (Directory) Initial commit: Instagram MCP Server - Complete MCP server implementa… May 30, 202511 months ago" [ref=e250]':
+                    - cell "examples, (Directory)" [ref=e251]:
+                      - generic [ref=e252]:
+                        - img [ref=e253]
+                        - link "examples, (Directory)" [ref=e258] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/tree/main/examples
+                          - text: examples
+                    - 'cell "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e259]':
+                      - 'link "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e262] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a9be5be96a180c98afbfd8ca9f263e7a36f52d26
+                    - cell "May 30, 202511 months ago" [ref=e263]:
+                      - generic [ref=e264]: May 30, 202511 months ago
+                  - 'row "scripts, (Directory) Initial commit: Instagram MCP Server - Complete MCP server implementa… May 30, 202511 months ago" [ref=e265]':
+                    - cell "scripts, (Directory)" [ref=e266]:
+                      - generic [ref=e267]:
+                        - img [ref=e268]
+                        - link "scripts, (Directory)" [ref=e273] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/tree/main/scripts
+                          - text: scripts
+                    - 'cell "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e274]':
+                      - 'link "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e277] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a9be5be96a180c98afbfd8ca9f263e7a36f52d26
+                    - cell "May 30, 202511 months ago" [ref=e278]:
+                      - generic [ref=e279]: May 30, 202511 months ago
+                  - 'row "src, (Directory) feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (#18) Oct 27, 20256 months ago" [ref=e280]':
+                    - cell "src, (Directory)" [ref=e281]:
+                      - generic [ref=e282]:
+                        - img [ref=e283]
+                        - link "src, (Directory)" [ref=e288] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/tree/main/src
+                          - text: src
+                    - 'cell "feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (#18)" [ref=e289]':
+                      - generic [ref=e291]:
+                        - 'link "feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (" [ref=e292] [cursor=pointer]':
+                          - /url: /jlbadano/ig-mcp/commit/f91779a3b00e7ed8e46bd12fab6244959037f15d
+                        - link "#18" [ref=e293] [cursor=pointer]:
+                          - /url: https://github.com/jlbadano/ig-mcp/pull/18
+                        - link ")" [ref=e294] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/commit/f91779a3b00e7ed8e46bd12fab6244959037f15d
+                    - cell "Oct 27, 20256 months ago" [ref=e295]:
+                      - generic [ref=e296]: Oct 27, 20256 months ago
+                  - 'row "tests, (Directory) fix: resolve Black and isort formatting conflicts - Add .isort.cfg wi… Jun 2, 202511 months ago" [ref=e297]':
+                    - cell "tests, (Directory)" [ref=e298]:
+                      - generic [ref=e299]:
+                        - img [ref=e300]
+                        - link "tests, (Directory)" [ref=e305] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/tree/main/tests
+                          - text: tests
+                    - 'cell "fix: resolve Black and isort formatting conflicts - Add .isort.cfg wi…" [ref=e306]':
+                      - 'link "fix: resolve Black and isort formatting conflicts - Add .isort.cfg wi…" [ref=e309] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/b1d8485b373d380c8d593b3158411daaf69e265f
+                    - cell "Jun 2, 202511 months ago" [ref=e310]:
+                      - generic [ref=e311]: Jun 2, 202511 months ago
+                  - 'row ".gitignore, (File) feat: Add comprehensive GitHub Actions workflows and DevOps infrastru… May 30, 202511 months ago" [ref=e312]':
+                    - cell ".gitignore, (File)" [ref=e313]:
+                      - generic [ref=e314]:
+                        - img [ref=e315]
+                        - link ".gitignore, (File)" [ref=e320] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/.gitignore
+                          - text: .gitignore
+                    - 'cell "feat: Add comprehensive GitHub Actions workflows and DevOps infrastru…" [ref=e321]':
+                      - 'link "feat: Add comprehensive GitHub Actions workflows and DevOps infrastru…" [ref=e324] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a15726d74addfc70be234b0881edee55f0068590
+                    - cell "May 30, 202511 months ago" [ref=e325]:
+                      - generic [ref=e326]: May 30, 202511 months ago
+                  - 'row ".isort.cfg, (File) fix: resolve Black and isort formatting conflicts - Add .isort.cfg wi… Jun 2, 202511 months ago" [ref=e327]':
+                    - cell ".isort.cfg, (File)" [ref=e328]:
+                      - generic [ref=e329]:
+                        - img [ref=e330]
+                        - link ".isort.cfg, (File)" [ref=e335] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/.isort.cfg
+                          - text: .isort.cfg
+                    - 'cell "fix: resolve Black and isort formatting conflicts - Add .isort.cfg wi…" [ref=e336]':
+                      - 'link "fix: resolve Black and isort formatting conflicts - Add .isort.cfg wi…" [ref=e339] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/b1d8485b373d380c8d593b3158411daaf69e265f
+                    - cell "Jun 2, 202511 months ago" [ref=e340]:
+                      - generic [ref=e341]: Jun 2, 202511 months ago
+                  - 'row ".pylintrc, (File) fix: Resolve pylint GitHub Action failures - Fixed .pylintrc configur… May 30, 202511 months ago" [ref=e342]':
+                    - cell ".pylintrc, (File)" [ref=e343]:
+                      - generic [ref=e344]:
+                        - img [ref=e345]
+                        - link ".pylintrc, (File)" [ref=e350] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/.pylintrc
+                          - text: .pylintrc
+                    - 'cell "fix: Resolve pylint GitHub Action failures - Fixed .pylintrc configur…" [ref=e351]':
+                      - 'link "fix: Resolve pylint GitHub Action failures - Fixed .pylintrc configur…" [ref=e354] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/d3dd0f3d560e20e2cfe82d4c452e1f56aa7418b0
+                    - cell "May 30, 202511 months ago" [ref=e355]:
+                      - generic [ref=e356]: May 30, 202511 months ago
+                  - 'row "AUTHENTICATION_GUIDE.md, (File) Initial commit: Instagram MCP Server - Complete MCP server implementa… May 30, 202511 months ago" [ref=e357]':
+                    - cell "AUTHENTICATION_GUIDE.md, (File)" [ref=e358]:
+                      - generic [ref=e359]:
+                        - img [ref=e360]
+                        - link "AUTHENTICATION_GUIDE.md, (File)" [ref=e365] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/AUTHENTICATION_GUIDE.md
+                          - text: AUTHENTICATION_GUIDE.md
+                    - 'cell "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e366]':
+                      - 'link "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e369] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a9be5be96a180c98afbfd8ca9f263e7a36f52d26
+                    - cell "May 30, 202511 months ago" [ref=e370]:
+                      - generic [ref=e371]: May 30, 202511 months ago
+                  - 'row "Dockerfile, (File) docker(deps): bump python from 3.13.7-slim to 3.14.0-slim (#20) Oct 20, 20256 months ago" [ref=e372]':
+                    - cell "Dockerfile, (File)" [ref=e373]:
+                      - generic [ref=e374]:
+                        - img [ref=e375]
+                        - link "Dockerfile, (File)" [ref=e380] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/Dockerfile
+                          - text: Dockerfile
+                    - 'cell "docker(deps): bump python from 3.13.7-slim to 3.14.0-slim (#20)" [ref=e381]':
+                      - generic [ref=e383]:
+                        - 'link "docker(deps): bump python from 3.13.7-slim to 3.14.0-slim (" [ref=e384] [cursor=pointer]':
+                          - /url: /jlbadano/ig-mcp/commit/6ec7db71251ac4470ecc082d0c340041ca72fc50
+                        - link "#20" [ref=e385] [cursor=pointer]:
+                          - /url: https://github.com/jlbadano/ig-mcp/pull/20
+                        - link ")" [ref=e386] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/commit/6ec7db71251ac4470ecc082d0c340041ca72fc50
+                    - cell "Oct 20, 20256 months ago" [ref=e387]:
+                      - generic [ref=e388]: Oct 20, 20256 months ago
+                  - 'row "INSTAGRAM_DM_SETUP.md, (File) feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (#18) Oct 27, 20256 months ago" [ref=e389]':
+                    - cell "INSTAGRAM_DM_SETUP.md, (File)" [ref=e390]:
+                      - generic [ref=e391]:
+                        - img [ref=e392]
+                        - link "INSTAGRAM_DM_SETUP.md, (File)" [ref=e397] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/INSTAGRAM_DM_SETUP.md
+                          - text: INSTAGRAM_DM_SETUP.md
+                    - 'cell "feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (#18)" [ref=e398]':
+                      - generic [ref=e400]:
+                        - 'link "feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (" [ref=e401] [cursor=pointer]':
+                          - /url: /jlbadano/ig-mcp/commit/f91779a3b00e7ed8e46bd12fab6244959037f15d
+                        - link "#18" [ref=e402] [cursor=pointer]:
+                          - /url: https://github.com/jlbadano/ig-mcp/pull/18
+                        - link ")" [ref=e403] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/commit/f91779a3b00e7ed8e46bd12fab6244959037f15d
+                    - cell "Oct 27, 20256 months ago" [ref=e404]:
+                      - generic [ref=e405]: Oct 27, 20256 months ago
+                  - row "LICENSE, (File) Initial commit May 30, 202511 months ago" [ref=e406]:
+                    - cell "LICENSE, (File)" [ref=e407]:
+                      - generic [ref=e408]:
+                        - img [ref=e409]
+                        - link "LICENSE, (File)" [ref=e414] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/LICENSE
+                          - text: LICENSE
+                    - cell "Initial commit" [ref=e415]:
+                      - link "Initial commit" [ref=e418] [cursor=pointer]:
+                        - /url: /jlbadano/ig-mcp/commit/43a6a010c8126a2687e47cc5bffbdf20ce3e7c0b
+                    - cell "May 30, 202511 months ago" [ref=e419]:
+                      - generic [ref=e420]: May 30, 202511 months ago
+                  - 'row "README.md, (File) feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (#18) Oct 27, 20256 months ago" [ref=e421]':
+                    - cell "README.md, (File)" [ref=e422]:
+                      - generic [ref=e423]:
+                        - img [ref=e424]
+                        - link "README.md, (File)" [ref=e429] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/README.md
+                          - text: README.md
+                    - 'cell "feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (#18)" [ref=e430]':
+                      - generic [ref=e432]:
+                        - 'link "feat: Add Instagram DM support + fix MCP SDK v1.0+ compatibility (" [ref=e433] [cursor=pointer]':
+                          - /url: /jlbadano/ig-mcp/commit/f91779a3b00e7ed8e46bd12fab6244959037f15d
+                        - link "#18" [ref=e434] [cursor=pointer]:
+                          - /url: https://github.com/jlbadano/ig-mcp/pull/18
+                        - link ")" [ref=e435] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/commit/f91779a3b00e7ed8e46bd12fab6244959037f15d
+                    - cell "Oct 27, 20256 months ago" [ref=e436]:
+                      - generic [ref=e437]: Oct 27, 20256 months ago
+                  - 'row "TESTING_SUMMARY.md, (File) Initial commit: Instagram MCP Server - Complete MCP server implementa… May 30, 202511 months ago" [ref=e438]':
+                    - cell "TESTING_SUMMARY.md, (File)" [ref=e439]:
+                      - generic [ref=e440]:
+                        - img [ref=e441]
+                        - link "TESTING_SUMMARY.md, (File)" [ref=e446] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/TESTING_SUMMARY.md
+                          - text: TESTING_SUMMARY.md
+                    - 'cell "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e447]':
+                      - 'link "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e450] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a9be5be96a180c98afbfd8ca9f263e7a36f52d26
+                    - cell "May 30, 202511 months ago" [ref=e451]:
+                      - generic [ref=e452]: May 30, 202511 months ago
+                  - 'row "docker-compose.yml, (File) feat: Add comprehensive GitHub Actions workflows and DevOps infrastru… May 30, 202511 months ago" [ref=e453]':
+                    - cell "docker-compose.yml, (File)" [ref=e454]:
+                      - generic [ref=e455]:
+                        - img [ref=e456]
+                        - link "docker-compose.yml, (File)" [ref=e461] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/docker-compose.yml
+                          - text: docker-compose.yml
+                    - 'cell "feat: Add comprehensive GitHub Actions workflows and DevOps infrastru…" [ref=e462]':
+                      - 'link "feat: Add comprehensive GitHub Actions workflows and DevOps infrastru…" [ref=e465] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a15726d74addfc70be234b0881edee55f0068590
+                    - cell "May 30, 202511 months ago" [ref=e466]:
+                      - generic [ref=e467]: May 30, 202511 months ago
+                  - 'row "env.example, (File) Initial commit: Instagram MCP Server - Complete MCP server implementa… May 30, 202511 months ago" [ref=e468]':
+                    - cell "env.example, (File)" [ref=e469]:
+                      - generic [ref=e470]:
+                        - img [ref=e471]
+                        - link "env.example, (File)" [ref=e476] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/env.example
+                          - text: env.example
+                    - 'cell "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e477]':
+                      - 'link "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e480] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a9be5be96a180c98afbfd8ca9f263e7a36f52d26
+                    - cell "May 30, 202511 months ago" [ref=e481]:
+                      - generic [ref=e482]: May 30, 202511 months ago
+                  - 'row "mypy.ini, (File) fix: resolve MyPy type checking errors with configuration file - Add … Jun 2, 202511 months ago" [ref=e483]':
+                    - cell "mypy.ini, (File)" [ref=e484]:
+                      - generic [ref=e485]:
+                        - img [ref=e486]
+                        - link "mypy.ini, (File)" [ref=e491] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/mypy.ini
+                          - text: mypy.ini
+                    - 'cell "fix: resolve MyPy type checking errors with configuration file - Add …" [ref=e492]':
+                      - 'link "fix: resolve MyPy type checking errors with configuration file - Add …" [ref=e495] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/69cbbd620d926fbeab4404edd51cb48d9a2b60ea
+                    - cell "Jun 2, 202511 months ago" [ref=e496]:
+                      - generic [ref=e497]: Jun 2, 202511 months ago
+                  - 'row "pytest.ini, (File) Initial commit: Instagram MCP Server - Complete MCP server implementa… May 30, 202511 months ago" [ref=e498]':
+                    - cell "pytest.ini, (File)" [ref=e499]:
+                      - generic [ref=e500]:
+                        - img [ref=e501]
+                        - link "pytest.ini, (File)" [ref=e506] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/pytest.ini
+                          - text: pytest.ini
+                    - 'cell "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e507]':
+                      - 'link "Initial commit: Instagram MCP Server - Complete MCP server implementa…" [ref=e510] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/a9be5be96a180c98afbfd8ca9f263e7a36f52d26
+                    - cell "May 30, 202511 months ago" [ref=e511]:
+                      - generic [ref=e512]: May 30, 202511 months ago
+                  - row "requirements.txt, (File) Fix Locust load test event loop conflict with nest_asyncio (#16) Oct 8, 20256 months ago" [ref=e513]:
+                    - cell "requirements.txt, (File)" [ref=e514]:
+                      - generic [ref=e515]:
+                        - img [ref=e516]
+                        - link "requirements.txt, (File)" [ref=e521] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/requirements.txt
+                          - text: requirements.txt
+                    - cell "Fix Locust load test event loop conflict with nest_asyncio (#16)" [ref=e522]:
+                      - generic [ref=e524]:
+                        - link "Fix Locust load test event loop conflict with nest_asyncio (" [ref=e525] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/commit/693a884a1b46e1b94a3abf3f215cce108e9b7dea
+                        - link "#16" [ref=e526] [cursor=pointer]:
+                          - /url: https://github.com/jlbadano/ig-mcp/pull/16
+                        - link ")" [ref=e527] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/commit/693a884a1b46e1b94a3abf3f215cce108e9b7dea
+                    - cell "Oct 8, 20256 months ago" [ref=e528]:
+                      - generic [ref=e529]: Oct 8, 20256 months ago
+                  - 'row "setup.py, (File) fix: Update Python version requirements to 3.10+ for MCP compatibility May 30, 202511 months ago" [ref=e530]':
+                    - cell "setup.py, (File)" [ref=e531]:
+                      - generic [ref=e532]:
+                        - img [ref=e533]
+                        - link "setup.py, (File)" [ref=e538] [cursor=pointer]:
+                          - /url: /jlbadano/ig-mcp/blob/main/setup.py
+                          - text: setup.py
+                    - 'cell "fix: Update Python version requirements to 3.10+ for MCP compatibility" [ref=e539]':
+                      - 'link "fix: Update Python version requirements to 3.10+ for MCP compatibility" [ref=e542] [cursor=pointer]':
+                        - /url: /jlbadano/ig-mcp/commit/3219facb54eee19968ded864c2a516ca796f04f7
+                    - cell "May 30, 202511 months ago" [ref=e543]:
+                      - generic [ref=e544]: May 30, 202511 months ago
+            - generic [ref=e546]:
+              - generic [ref=e547]:
+                - heading "Repository files navigation" [level=2] [ref=e548]
+                - navigation "Repository files" [ref=e549]:
+                  - list [ref=e550]:
+                    - listitem [ref=e551]:
+                      - link "README" [ref=e552] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e554]
+                        - generic [ref=e556]: README
+                    - listitem [ref=e557]:
+                      - link "MIT license" [ref=e558] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e560]
+                        - generic [ref=e562]: MIT license
+                - button "Outline" [ref=e563] [cursor=pointer]:
+                  - img [ref=e564]
+              - article [ref=e567]:
+                - paragraph [ref=e568]:
+                  - link "Verified on MseeP" [ref=e569] [cursor=pointer]:
+                    - /url: https://mseep.ai/app/7bde8131-7019-405f-89d1-cef574a8129a
+                    - img "Verified on MseeP" [ref=e570]
+                - paragraph [ref=e571]:
+                  - link "MSeeP.ai Security Assessment Badge" [ref=e572] [cursor=pointer]:
+                    - /url: https://mseep.ai/app/jlbadano-ig-mcp
+                    - img "MSeeP.ai Security Assessment Badge" [ref=e573]
+                - generic [ref=e574]:
+                  - heading "Instagram MCP Server" [level=1] [ref=e575]
+                  - 'link "Permalink: Instagram MCP Server" [ref=e576] [cursor=pointer]':
+                    - /url: "#instagram-mcp-server"
+                    - img [ref=e577]
+                - paragraph [ref=e579]: A Model Context Protocol (MCP) server that provides seamless integration with Instagram's Graph API, enabling AI applications to interact with Instagram Business accounts programmatically.
+                - generic [ref=e580]:
+                  - heading "Features" [level=2] [ref=e581]
+                  - 'link "Permalink: Features" [ref=e582] [cursor=pointer]':
+                    - /url: "#features"
+                    - img [ref=e583]
+                - generic [ref=e585]:
+                  - heading "🔧 Tools (Model-controlled)" [level=3] [ref=e586]
+                  - 'link "Permalink: 🔧 Tools (Model-controlled)" [ref=e587] [cursor=pointer]':
+                    - /url: "#-tools-model-controlled"
+                    - img [ref=e588]
+                - list [ref=e590]:
+                  - listitem [ref=e591]:
+                    - strong [ref=e592]: Get Profile Info
+                    - text: ": Retrieve Instagram business profile details"
+                  - listitem [ref=e593]:
+                    - strong [ref=e594]: Get Media Posts
+                    - text: ": Fetch recent posts from an Instagram account"
+                  - listitem [ref=e595]:
+                    - strong [ref=e596]: Get Media Insights
+                    - text: ": Retrieve engagement metrics for specific posts"
+                  - listitem [ref=e597]:
+                    - strong [ref=e598]: Publish Media
+                    - text: ": Upload and publish images/videos to Instagram"
+                  - listitem [ref=e599]:
+                    - strong [ref=e600]: Get Account Pages
+                    - text: ": List Facebook pages connected to the account"
+                  - listitem [ref=e601]:
+                    - strong [ref=e602]: Get Conversations
+                    - text: ": List Instagram DM conversations (requires Advanced Access)"
+                  - listitem [ref=e603]:
+                    - strong [ref=e604]: Get Conversation Messages
+                    - text: ": Read messages from specific conversations (requires Advanced Access)"
+                  - listitem [ref=e605]:
+                    - strong [ref=e606]: Send DM
+                    - text: ": Reply to Instagram direct messages (requires Advanced Access)"
+                - generic [ref=e607]:
+                  - heading "📊 Resources (Application-controlled)" [level=3] [ref=e608]
+                  - 'link "Permalink: 📊 Resources (Application-controlled)" [ref=e609] [cursor=pointer]':
+                    - /url: "#-resources-application-controlled"
+                    - img [ref=e610]
+                - list [ref=e612]:
+                  - listitem [ref=e613]:
+                    - strong [ref=e614]: Profile Data
+                    - text: ": Access to profile information including follower counts, bio, etc."
+                  - listitem [ref=e615]:
+                    - strong [ref=e616]: Media Feed
+                    - text: ": Recent posts with engagement metrics"
+                  - listitem [ref=e617]:
+                    - strong [ref=e618]: Insights Data
+                    - text: ": Detailed analytics for posts and account performance"
+                - generic [ref=e619]:
+                  - heading "💬 Prompts (User-controlled)" [level=3] [ref=e620]
+                  - 'link "Permalink: 💬 Prompts (User-controlled)" [ref=e621] [cursor=pointer]':
+                    - /url: "#-prompts-user-controlled"
+                    - img [ref=e622]
+                - list [ref=e624]:
+                  - listitem [ref=e625]:
+                    - strong [ref=e626]: Analyze Engagement
+                    - text: ": Pre-built prompt for analyzing post performance"
+                  - listitem [ref=e627]:
+                    - strong [ref=e628]: Content Strategy
+                    - text: ": Template for generating content recommendations"
+                  - listitem [ref=e629]:
+                    - strong [ref=e630]: Hashtag Analysis
+                    - text: ": Prompt for hashtag performance evaluation"
+                - generic [ref=e631]:
+                  - heading "Prerequisites" [level=2] [ref=e632]
+                  - 'link "Permalink: Prerequisites" [ref=e633] [cursor=pointer]':
+                    - /url: "#prerequisites"
+                    - img [ref=e634]
+                - list [ref=e636]:
+                  - listitem [ref=e637]:
+                    - strong [ref=e638]: Instagram Business Account
+                    - text: ": Must be connected to a Facebook Page"
+                  - listitem [ref=e639]:
+                    - strong [ref=e640]: Facebook Developer Account
+                    - text: ": Required for API access"
+                  - listitem [ref=e641]:
+                    - strong [ref=e642]: Access Token
+                    - text: ": Long-lived access token with appropriate permissions"
+                  - listitem [ref=e643]:
+                    - strong [ref=e644]: Python 3.10+
+                    - text: ": For running the MCP server (required by MCP dependencies)"
+                - generic [ref=e645]:
+                  - heading "Required Instagram API Permissions" [level=3] [ref=e646]
+                  - 'link "Permalink: Required Instagram API Permissions" [ref=e647] [cursor=pointer]':
+                    - /url: "#required-instagram-api-permissions"
+                    - img [ref=e648]
+                - paragraph [ref=e650]:
+                  - strong [ref=e651]: Standard Access
+                  - text: "(available immediately):"
+                - list [ref=e652]:
+                  - listitem [ref=e653]:
+                    - code [ref=e654]: instagram_basic
+                  - listitem [ref=e655]:
+                    - code [ref=e656]: instagram_content_publish
+                  - listitem [ref=e657]:
+                    - code [ref=e658]: instagram_manage_insights
+                  - listitem [ref=e659]:
+                    - code [ref=e660]: instagram_manage_comments
+                  - listitem [ref=e661]:
+                    - code [ref=e662]: pages_show_list
+                  - listitem [ref=e663]:
+                    - code [ref=e664]: pages_read_engagement
+                  - listitem [ref=e665]:
+                    - code [ref=e666]: pages_manage_metadata
+                  - listitem [ref=e667]:
+                    - code [ref=e668]: pages_read_user_content
+                  - listitem [ref=e669]:
+                    - code [ref=e670]: business_management
+                - paragraph [ref=e671]:
+                  - strong [ref=e672]: Advanced Access
+                  - text: "(requires Meta App Review):"
+                - list [ref=e673]:
+                  - listitem [ref=e674]:
+                    - code [ref=e675]: instagram_manage_messages
+                    - text: "- Required for Direct Messaging features"
+                - blockquote [ref=e676]:
+                  - paragraph [ref=e677]:
+                    - generic [ref=e678]: ⚠️
+                    - strong [ref=e679]: Instagram DM Features
+                    - text: ": Reading and sending Instagram direct messages requires Advanced Access approval from Meta. See"
+                    - link "INSTAGRAM_DM_SETUP.md" [ref=e680] [cursor=pointer]:
+                      - /url: /jlbadano/ig-mcp/blob/main/INSTAGRAM_DM_SETUP.md
+                    - text: for the App Review process.
+                - generic [ref=e681]:
+                  - heading "🔑 How to Get Instagram API Credentials" [level=2] [ref=e682]
+                  - 'link "Permalink: 🔑 How to Get Instagram API Credentials" [ref=e683] [cursor=pointer]':
+                    - /url: "#-how-to-get-instagram-api-credentials"
+                    - img [ref=e684]
+                - blockquote [ref=e686]:
+                  - paragraph [ref=e687]:
+                    - text: 📖
+                    - strong [ref=e688]: Quick Start
+                    - text: ": See"
+                    - link "AUTHENTICATION_GUIDE.md" [ref=e689] [cursor=pointer]:
+                      - /url: /jlbadano/ig-mcp/blob/main/AUTHENTICATION_GUIDE.md
+                    - text: for a 5-minute setup guide!
+                - paragraph [ref=e690]: This section provides a step-by-step guide to obtain the necessary credentials for the Instagram MCP server.
+                - generic [ref=e691]:
+                  - 'heading "Step 1: Set Up Instagram Business Account" [level=3] [ref=e692]'
+                  - 'link "Permalink: Step 1: Set Up Instagram Business Account" [ref=e693] [cursor=pointer]':
+                    - /url: "#step-1-set-up-instagram-business-account"
+                    - img [ref=e694]
+                - list [ref=e696]:
+                  - listitem [ref=e697]:
+                    - paragraph [ref=e698]:
+                      - strong [ref=e699]: Convert to Business Account
+                      - text: "(if not already):"
+                    - list [ref=e700]:
+                      - listitem [ref=e701]: Open Instagram app → Settings → Account → Switch to Professional Account
+                      - listitem [ref=e702]: Choose "Business" → Select a category → Complete setup
+                  - listitem [ref=e703]:
+                    - paragraph [ref=e704]:
+                      - strong [ref=e705]: Connect to Facebook Page
+                      - text: ":"
+                    - list [ref=e706]:
+                      - listitem [ref=e707]: Go to Instagram Settings → Account → Linked Accounts → Facebook
+                      - listitem [ref=e708]: Connect to an existing Facebook Page or create a new one
+                      - listitem [ref=e709]:
+                        - strong [ref=e710]: Important
+                        - text: ": The Facebook Page must be owned by you"
+                - generic [ref=e711]:
+                  - 'heading "Step 2: Create Facebook App" [level=3] [ref=e712]'
+                  - 'link "Permalink: Step 2: Create Facebook App" [ref=e713] [cursor=pointer]':
+                    - /url: "#step-2-create-facebook-app"
+                    - img [ref=e714]
+                - list [ref=e716]:
+                  - listitem [ref=e717]:
+                    - paragraph [ref=e718]:
+                      - strong [ref=e719]: Go to Facebook Developers
+                      - text: ":"
+                    - list [ref=e720]:
+                      - listitem [ref=e721]:
+                        - text: Visit
+                        - link "developers.facebook.com" [ref=e722] [cursor=pointer]:
+                          - /url: https://developers.facebook.com
+                      - listitem [ref=e723]: Log in with your Facebook account
+                  - listitem [ref=e724]:
+                    - paragraph [ref=e725]:
+                      - strong [ref=e726]: Create New App
+                      - text: ":"
+                    - list [ref=e727]:
+                      - listitem [ref=e728]: Click "Create App" → Choose "Business" → Click "Next"
+                      - listitem [ref=e729]:
+                        - text: "Fill in app details:"
+                        - list [ref=e730]:
+                          - listitem [ref=e731]:
+                            - strong [ref=e732]: App Name
+                            - text: ": Choose a descriptive name (e.g., \"My Instagram MCP Server\")"
+                          - listitem [ref=e733]:
+                            - strong [ref=e734]: App Contact Email
+                            - text: ": Your email address"
+                      - listitem [ref=e735]: Click "Create App"
+                  - listitem [ref=e736]:
+                    - paragraph [ref=e737]:
+                      - strong [ref=e738]: Add Instagram Basic Display Product
+                      - text: ":"
+                    - list [ref=e739]:
+                      - listitem [ref=e740]: In your app dashboard, click "Add Product"
+                      - listitem [ref=e741]: Find "Instagram Basic Display" → Click "Set Up"
+                  - listitem [ref=e742]:
+                    - paragraph [ref=e743]:
+                      - strong [ref=e744]: Configure Instagram Basic Display
+                      - text: ":"
+                    - list [ref=e745]:
+                      - listitem [ref=e746]: Go to Instagram Basic Display → Basic Display
+                      - listitem [ref=e747]: Click "Create New App" in the Instagram App section
+                      - listitem [ref=e748]: Accept the terms and create the app
+                - generic [ref=e749]:
+                  - 'heading "Step 3: Get App Credentials" [level=3] [ref=e750]'
+                  - 'link "Permalink: Step 3: Get App Credentials" [ref=e751] [cursor=pointer]':
+                    - /url: "#step-3-get-app-credentials"
+                    - img [ref=e752]
+                - list [ref=e754]:
+                  - listitem [ref=e755]:
+                    - strong [ref=e756]: Get App ID and Secret
+                    - text: ":"
+                    - list [ref=e757]:
+                      - listitem [ref=e758]: In your Facebook app dashboard, go to Settings → Basic
+                      - listitem [ref=e759]:
+                        - text: Copy your
+                        - strong [ref=e760]: App ID
+                        - text: and
+                        - strong [ref=e761]: App Secret
+                      - listitem [ref=e762]:
+                        - strong [ref=e763]: Important
+                        - text: ": Keep the App Secret secure and never share it publicly"
+                - generic [ref=e764]:
+                  - 'heading "Step 4: Set Up Instagram Business API Access" [level=3] [ref=e765]'
+                  - 'link "Permalink: Step 4: Set Up Instagram Business API Access" [ref=e766] [cursor=pointer]':
+                    - /url: "#step-4-set-up-instagram-business-api-access"
+                    - img [ref=e767]
+                - list [ref=e769]:
+                  - listitem [ref=e770]:
+                    - paragraph [ref=e771]:
+                      - strong [ref=e772]: Add Instagram Graph API Product
+                      - text: ":"
+                    - list [ref=e773]:
+                      - listitem [ref=e774]: In your app dashboard, click "Add Product"
+                      - listitem [ref=e775]: Find "Instagram Graph API" → Click "Set Up"
+                  - listitem [ref=e776]:
+                    - paragraph [ref=e777]:
+                      - strong [ref=e778]: Configure Permissions
+                      - text: ":"
+                    - list [ref=e779]:
+                      - listitem [ref=e780]: Go to Instagram Graph API → Permissions
+                      - listitem [ref=e781]:
+                        - text: "Request the following permissions:"
+                        - list [ref=e782]:
+                          - listitem [ref=e783]:
+                            - code [ref=e784]: instagram_basic
+                          - listitem [ref=e785]:
+                            - code [ref=e786]: instagram_content_publish
+                          - listitem [ref=e787]:
+                            - code [ref=e788]: instagram_manage_insights
+                          - listitem [ref=e789]:
+                            - code [ref=e790]: pages_show_list
+                          - listitem [ref=e791]:
+                            - code [ref=e792]: pages_read_engagement
+                - generic [ref=e793]:
+                  - 'heading "Step 5: Generate Access Token" [level=3] [ref=e794]'
+                  - 'link "Permalink: Step 5: Generate Access Token" [ref=e795] [cursor=pointer]':
+                    - /url: "#step-5-generate-access-token"
+                    - img [ref=e796]
+                - generic [ref=e798]:
+                  - 'heading "Option A: Using Facebook Graph API Explorer (Recommended for Testing)" [level=4] [ref=e799]'
+                  - 'link "Permalink: Option A: Using Facebook Graph API Explorer (Recommended for Testing)" [ref=e800] [cursor=pointer]':
+                    - /url: "#option-a-using-facebook-graph-api-explorer-recommended-for-testing"
+                    - img [ref=e801]
+                - list [ref=e803]:
+                  - listitem [ref=e804]:
+                    - paragraph [ref=e805]:
+                      - strong [ref=e806]: Go to Graph API Explorer
+                      - text: ":"
+                    - list [ref=e807]:
+                      - listitem [ref=e808]:
+                        - text: Visit
+                        - link "developers.facebook.com/tools/explorer" [ref=e809] [cursor=pointer]:
+                          - /url: https://developers.facebook.com/tools/explorer
+                  - listitem [ref=e810]:
+                    - paragraph [ref=e811]:
+                      - strong [ref=e812]: Configure Explorer
+                      - text: ":"
+                    - list [ref=e813]:
+                      - listitem [ref=e814]: Select your app from the dropdown
+                      - listitem [ref=e815]: Click "Generate Access Token"
+                      - listitem [ref=e816]: Select required permissions when prompted
+                  - listitem [ref=e817]:
+                    - paragraph [ref=e818]:
+                      - strong [ref=e819]: Get Page Access Token
+                      - text: ":"
+                    - list [ref=e820]:
+                      - listitem [ref=e821]:
+                        - text: "In the explorer, make a GET request to:"
+                        - code [ref=e822]: /me/accounts
+                      - listitem [ref=e823]: Find your Facebook Page in the response
+                      - listitem [ref=e824]:
+                        - text: Copy the
+                        - code [ref=e825]: access_token
+                        - text: for your page
+                  - listitem [ref=e826]:
+                    - paragraph [ref=e827]:
+                      - strong [ref=e828]: Get Instagram Business Account ID
+                      - text: ":"
+                    - list [ref=e829]:
+                      - listitem [ref=e830]:
+                        - text: "Use the page access token to make a GET request to:"
+                        - code [ref=e831]: "/{page-id}?fields=instagram_business_account"
+                      - listitem [ref=e832]: Copy the Instagram Business Account ID from the response
+                - generic [ref=e833]:
+                  - 'heading "Option B: Using Facebook Login Flow (Recommended for Production)" [level=4] [ref=e834]'
+                  - 'link "Permalink: Option B: Using Facebook Login Flow (Recommended for Production)" [ref=e835] [cursor=pointer]':
+                    - /url: "#option-b-using-facebook-login-flow-recommended-for-production"
+                    - img [ref=e836]
+                - list [ref=e838]:
+                  - listitem [ref=e839]:
+                    - paragraph [ref=e840]:
+                      - strong [ref=e841]: Set Up Facebook Login
+                      - text: ":"
+                    - list [ref=e842]:
+                      - listitem [ref=e843]: In your app dashboard, add "Facebook Login" product
+                      - listitem [ref=e844]: Configure Valid OAuth Redirect URIs
+                  - listitem [ref=e845]:
+                    - paragraph [ref=e846]:
+                      - strong [ref=e847]: Implement OAuth Flow
+                      - text: ":"
+                    - generic [ref=e848]:
+                      - generic [ref=e849]:
+                        - text: "# Example OAuth URL oauth_url ="
+                        - generic [ref=e850]:
+                          - text: f"https://www.facebook.com/v19.0/dialog/oauth?client_id=
+                          - generic [ref=e851]: "{app_id}"
+                          - text: "&redirect_uri="
+                          - generic [ref=e852]: "{redirect_uri}"
+                          - text: "&scope=pages_show_list,instagram_basic,instagram_content_publish,instagram_manage_insights\""
+                      - button "Copy" [ref=e854] [cursor=pointer]:
+                        - img [ref=e855]
+                  - listitem [ref=e858]:
+                    - paragraph [ref=e859]:
+                      - strong [ref=e860]: Exchange Code for Token
+                      - text: ":"
+                    - generic [ref=e861]:
+                      - generic [ref=e862]:
+                        - text: "# Exchange authorization code for access token token_url ="
+                        - generic [ref=e863]:
+                          - text: f"https://graph.facebook.com/v19.0/oauth/access_token?client_id=
+                          - generic [ref=e864]: "{app_id}"
+                          - text: "&redirect_uri="
+                          - generic [ref=e865]: "{redirect_uri}"
+                          - text: "&client_secret="
+                          - generic [ref=e866]: "{app_secret}"
+                          - text: "&code="
+                          - generic [ref=e867]: "{auth_code}"
+                          - text: "\""
+                      - button "Copy" [ref=e869] [cursor=pointer]:
+                        - img [ref=e870]
+                - generic [ref=e873]:
+                  - 'heading "Step 6: Get Long-Lived Access Token" [level=3] [ref=e874]'
+                  - 'link "Permalink: Step 6: Get Long-Lived Access Token" [ref=e875] [cursor=pointer]':
+                    - /url: "#step-6-get-long-lived-access-token"
+                    - img [ref=e876]
+                - paragraph [ref=e878]: "Short-lived tokens expire in 1 hour. Convert to long-lived token (60 days):"
+                - generic [ref=e879]:
+                  - generic [ref=e880]:
+                    - text: curl -X GET
+                    - generic [ref=e881]: "\"https://graph.facebook.com/v19.0/oauth/access_token?grant_type=fb_exchange_token&client_id={app_id}&client_secret={app_secret}&fb_exchange_token={short_lived_token}\""
+                  - button "Copy" [ref=e883] [cursor=pointer]:
+                    - img [ref=e884]
+                - generic [ref=e887]:
+                  - 'heading "Step 7: Set Up Environment Variables" [level=3] [ref=e888]'
+                  - 'link "Permalink: Step 7: Set Up Environment Variables" [ref=e889] [cursor=pointer]':
+                    - /url: "#step-7-set-up-environment-variables"
+                    - img [ref=e890]
+                - paragraph [ref=e892]:
+                  - text: Create a
+                  - code [ref=e893]: .env
+                  - text: "file in your project root:"
+                - generic [ref=e894]:
+                  - generic [ref=e895]:
+                    - generic [ref=e896]: "# Facebook App Credentials"
+                    - text: FACEBOOK_APP_ID=your_app_id_here FACEBOOK_APP_SECRET=your_app_secret_here
+                    - generic [ref=e897]: "# Instagram Access Token (long-lived)"
+                    - text: INSTAGRAM_ACCESS_TOKEN=your_long_lived_access_token_here
+                    - generic [ref=e898]: "# Instagram Business Account ID"
+                    - text: INSTAGRAM_BUSINESS_ACCOUNT_ID=your_instagram_business_account_id_here
+                    - generic [ref=e899]: "# Optional: API Configuration"
+                    - text: INSTAGRAM_API_VERSION=v19.0 RATE_LIMIT_REQUESTS_PER_HOUR=200 CACHE_ENABLED=true LOG_LEVEL=INFO
+                  - button "Copy" [ref=e901] [cursor=pointer]:
+                    - img [ref=e902]
+                - generic [ref=e905]:
+                  - 'heading "Step 8: Test Your Setup" [level=3] [ref=e906]'
+                  - 'link "Permalink: Step 8: Test Your Setup" [ref=e907] [cursor=pointer]':
+                    - /url: "#step-8-test-your-setup"
+                    - img [ref=e908]
+                - paragraph [ref=e910]: "Run the validation script to test your credentials:"
+                - generic [ref=e911]:
+                  - generic [ref=e912]: python scripts/setup.py
+                  - button "Copy" [ref=e914] [cursor=pointer]:
+                    - img [ref=e915]
+                - paragraph [ref=e918]: "Or test manually:"
+                - generic [ref=e919]:
+                  - generic [ref=e920]:
+                    - text: "import os import requests # Test access token access_token = os.getenv('INSTAGRAM_ACCESS_TOKEN') response = requests.get("
+                    - generic [ref=e921]:
+                      - text: f'https://graph.facebook.com/v19.0/me?access_token=
+                      - generic [ref=e922]: "{access_token}"
+                      - text: "'"
+                    - text: ) print(response.json())
+                  - button "Copy" [ref=e924] [cursor=pointer]:
+                    - img [ref=e925]
+                - generic [ref=e928]:
+                  - heading "🚨 Important Security Notes" [level=3] [ref=e929]
+                  - 'link "Permalink: 🚨 Important Security Notes" [ref=e930] [cursor=pointer]':
+                    - /url: "#-important-security-notes"
+                    - img [ref=e931]
+                - list [ref=e933]:
+                  - listitem [ref=e934]:
+                    - strong [ref=e935]: Never commit credentials to version control
+                  - listitem [ref=e936]:
+                    - strong [ref=e937]: Use environment variables or secure secret management
+                  - listitem [ref=e938]:
+                    - strong [ref=e939]: Regularly rotate access tokens
+                  - listitem [ref=e940]:
+                    - strong [ref=e941]: Monitor token expiration dates
+                  - listitem [ref=e942]:
+                    - strong [ref=e943]: Use HTTPS only in production
+                  - listitem [ref=e944]:
+                    - strong [ref=e945]: Implement proper error handling for expired tokens
+                - generic [ref=e946]:
+                  - heading "🔄 Token Refresh Strategy" [level=3] [ref=e947]
+                  - 'link "Permalink: 🔄 Token Refresh Strategy" [ref=e948] [cursor=pointer]':
+                    - /url: "#-token-refresh-strategy"
+                    - img [ref=e949]
+                - paragraph [ref=e951]: "Long-lived tokens expire after 60 days. Implement automatic refresh:"
+                - generic [ref=e952]:
+                  - generic [ref=e953]:
+                    - text: "# Check token validity def check_token_validity(access_token): url ="
+                    - generic [ref=e954]:
+                      - text: f"https://graph.facebook.com/v19.0/me?access_token=
+                      - generic [ref=e955]: "{access_token}"
+                      - text: "\""
+                    - text: "response = requests.get(url) return response.status_code == 200 # Refresh token before expiration def refresh_long_lived_token(access_token, app_id, app_secret): url = f\"https://graph.facebook.com/v19.0/oauth/access_token\" params = { 'grant_type': 'fb_exchange_token', 'client_id': app_id, 'client_secret': app_secret, 'fb_exchange_token': access_token } response = requests.get(url, params=params) return response.json().get('access_token')"
+                  - button "Copy" [ref=e957] [cursor=pointer]:
+                    - img [ref=e958]
+                - generic [ref=e961]:
+                  - heading "📋 Troubleshooting Common Issues" [level=3] [ref=e962]
+                  - 'link "Permalink: 📋 Troubleshooting Common Issues" [ref=e963] [cursor=pointer]':
+                    - /url: "#-troubleshooting-common-issues"
+                    - img [ref=e964]
+                - paragraph [ref=e966]:
+                  - strong [ref=e967]: "Error: \"Invalid OAuth access token\""
+                - list [ref=e968]:
+                  - listitem [ref=e969]: Check if token has expired
+                  - listitem [ref=e970]: Verify token has required permissions
+                  - listitem [ref=e971]: Ensure Instagram account is connected to Facebook Page
+                - paragraph [ref=e972]:
+                  - strong [ref=e973]: "Error: \"Instagram account not found\""
+                - list [ref=e974]:
+                  - listitem [ref=e975]: Verify Instagram Business Account ID is correct
+                  - listitem [ref=e976]: Check if Instagram account is properly linked to Facebook Page
+                  - listitem [ref=e977]: Ensure account is a Business account, not Personal
+                - paragraph [ref=e978]:
+                  - strong [ref=e979]: "Error: \"Insufficient permissions\""
+                - list [ref=e980]:
+                  - listitem [ref=e981]: Review required permissions in Facebook App
+                  - listitem [ref=e982]: Re-generate access token with correct scopes
+                  - listitem [ref=e983]: Check if app is in Development vs Live mode
+                - paragraph [ref=e984]:
+                  - strong [ref=e985]: Rate Limiting Issues
+                - list [ref=e986]:
+                  - listitem [ref=e987]: Implement exponential backoff
+                  - listitem [ref=e988]: Cache responses when possible
+                  - listitem [ref=e989]: Monitor rate limit headers in API responses
+                - generic [ref=e990]:
+                  - heading "Installation" [level=2] [ref=e991]
+                  - 'link "Permalink: Installation" [ref=e992] [cursor=pointer]':
+                    - /url: "#installation"
+                    - img [ref=e993]
+                - list [ref=e995]:
+                  - listitem [ref=e996]:
+                    - strong [ref=e997]: Clone the repository
+                    - text: ":"
+                - generic [ref=e998]:
+                  - generic [ref=e999]: git clone <repository-url> cd ig-mcp
+                  - button "Copy" [ref=e1001] [cursor=pointer]:
+                    - img [ref=e1002]
+                - list [ref=e1005]:
+                  - listitem [ref=e1006]:
+                    - strong [ref=e1007]: Install dependencies
+                    - text: ":"
+                - generic [ref=e1008]:
+                  - generic [ref=e1009]: pip install -r requirements.txt
+                  - button "Copy" [ref=e1011] [cursor=pointer]:
+                    - img [ref=e1012]
+                - list [ref=e1015]:
+                  - listitem [ref=e1016]:
+                    - strong [ref=e1017]: Set up environment variables
+                    - text: ":"
+                - generic [ref=e1018]:
+                  - generic [ref=e1019]:
+                    - text: cp .env.example .env
+                    - generic [ref=e1020]: "# Edit .env with your Instagram API credentials"
+                  - button "Copy" [ref=e1022] [cursor=pointer]:
+                    - img [ref=e1023]
+                - list [ref=e1026]:
+                  - listitem [ref=e1027]:
+                    - strong [ref=e1028]: Configure the MCP server
+                    - text: ":"
+                - generic [ref=e1029]:
+                  - generic [ref=e1031]: "# Edit config.json with your specific settings"
+                  - button "Copy" [ref=e1033] [cursor=pointer]:
+                    - img [ref=e1034]
+                - generic [ref=e1037]:
+                  - heading "Configuration" [level=2] [ref=e1038]
+                  - 'link "Permalink: Configuration" [ref=e1039] [cursor=pointer]':
+                    - /url: "#configuration"
+                    - img [ref=e1040]
+                - generic [ref=e1042]:
+                  - heading "Environment Variables (.env)" [level=3] [ref=e1043]
+                  - 'link "Permalink: Environment Variables (.env)" [ref=e1044] [cursor=pointer]':
+                    - /url: "#environment-variables-env"
+                    - img [ref=e1045]
+                - generic [ref=e1047]:
+                  - generic [ref=e1048]: INSTAGRAM_ACCESS_TOKEN=your_long_lived_access_token FACEBOOK_APP_ID=your_facebook_app_id FACEBOOK_APP_SECRET=your_facebook_app_secret INSTAGRAM_BUSINESS_ACCOUNT_ID=your_instagram_business_account_id
+                  - button "Copy" [ref=e1050] [cursor=pointer]:
+                    - img [ref=e1051]
+                - generic [ref=e1054]:
+                  - heading "MCP Client Configuration" [level=3] [ref=e1055]
+                  - 'link "Permalink: MCP Client Configuration" [ref=e1056] [cursor=pointer]':
+                    - /url: "#mcp-client-configuration"
+                    - img [ref=e1057]
+                - paragraph [ref=e1059]: "Add this to your MCP client configuration (e.g., Claude Desktop):"
+                - generic [ref=e1060]:
+                  - generic [ref=e1061]:
+                    - text: "{ \"mcpServers\": { \"instagram\": { \"command\":"
+                    - generic [ref=e1062]: "\"python\""
+                    - text: ", \"args\": ["
+                    - generic [ref=e1063]: "\"/path/to/ig-mcp/src/instagram_mcp_server.py\""
+                    - text: "], \"env\": { \"INSTAGRAM_ACCESS_TOKEN\":"
+                    - generic [ref=e1064]: "\"your_access_token\""
+                    - text: "} } } }"
+                  - button "Copy" [ref=e1066] [cursor=pointer]:
+                    - img [ref=e1067]
+                - generic [ref=e1070]:
+                  - heading "Usage Examples" [level=2] [ref=e1071]
+                  - 'link "Permalink: Usage Examples" [ref=e1072] [cursor=pointer]':
+                    - /url: "#usage-examples"
+                    - img [ref=e1073]
+                - generic [ref=e1075]:
+                  - heading "Using with Claude Desktop" [level=3] [ref=e1076]
+                  - 'link "Permalink: Using with Claude Desktop" [ref=e1077] [cursor=pointer]':
+                    - /url: "#using-with-claude-desktop"
+                    - img [ref=e1078]
+                - list [ref=e1080]:
+                  - listitem [ref=e1081]:
+                    - strong [ref=e1082]: Get Profile Information
+                    - text: ":"
+                - generic [ref=e1083]:
+                  - code [ref=e1085]: Can you get my Instagram profile information?
+                  - button "Copy" [ref=e1087] [cursor=pointer]:
+                    - img [ref=e1088]
+                - list [ref=e1091]:
+                  - listitem [ref=e1092]:
+                    - strong [ref=e1093]: Analyze Recent Posts
+                    - text: ":"
+                - generic [ref=e1094]:
+                  - code [ref=e1096]: Show me my last 5 Instagram posts and their engagement metrics
+                  - button "Copy" [ref=e1098] [cursor=pointer]:
+                    - img [ref=e1099]
+                - list [ref=e1102]:
+                  - listitem [ref=e1103]:
+                    - strong [ref=e1104]: Publish Content
+                    - text: ":"
+                - generic [ref=e1105]:
+                  - code [ref=e1107]: "Upload this image to my Instagram account with the caption \"Beautiful sunset! #photography #nature\""
+                  - button "Copy" [ref=e1109] [cursor=pointer]:
+                    - img [ref=e1110]
+                - generic [ref=e1113]:
+                  - heading "Using with Python MCP Client" [level=3] [ref=e1114]
+                  - 'link "Permalink: Using with Python MCP Client" [ref=e1115] [cursor=pointer]':
+                    - /url: "#using-with-python-mcp-client"
+                    - img [ref=e1116]
+                - generic [ref=e1118]:
+                  - generic [ref=e1119]: "from mcp import ClientSession, StdioServerParameters from mcp.client.stdio import stdio_client # Connect to the Instagram MCP server server_params = StdioServerParameters( command=\"python\", args=[\"src/instagram_mcp_server.py\"] ) async with stdio_client(server_params) as (read, write): async with ClientSession(read, write) as session: await session.initialize() # Get profile information result = await session.call_tool(\"get_profile_info\", {}) print(result)"
+                  - button "Copy" [ref=e1121] [cursor=pointer]:
+                    - img [ref=e1122]
+                - generic [ref=e1125]:
+                  - heading "API Endpoints Covered" [level=2] [ref=e1126]
+                  - 'link "Permalink: API Endpoints Covered" [ref=e1127] [cursor=pointer]':
+                    - /url: "#api-endpoints-covered"
+                    - img [ref=e1128]
+                - generic [ref=e1130]:
+                  - heading "Profile Management" [level=3] [ref=e1131]
+                  - 'link "Permalink: Profile Management" [ref=e1132] [cursor=pointer]':
+                    - /url: "#profile-management"
+                    - img [ref=e1133]
+                - list [ref=e1135]:
+                  - listitem [ref=e1136]: Get business profile information
+                  - listitem [ref=e1137]: Update profile details (future feature)
+                - generic [ref=e1138]:
+                  - heading "Media Management" [level=3] [ref=e1139]
+                  - 'link "Permalink: Media Management" [ref=e1140] [cursor=pointer]':
+                    - /url: "#media-management"
+                    - img [ref=e1141]
+                - list [ref=e1143]:
+                  - listitem [ref=e1144]: Retrieve recent posts
+                  - listitem [ref=e1145]: Get specific media details
+                  - listitem [ref=e1146]: Upload and publish new content
+                  - listitem [ref=e1147]: Delete media (future feature)
+                - generic [ref=e1148]:
+                  - heading "Analytics & Insights" [level=3] [ref=e1149]
+                  - 'link "Permalink: Analytics & Insights" [ref=e1150] [cursor=pointer]':
+                    - /url: "#analytics--insights"
+                    - img [ref=e1151]
+                - list [ref=e1153]:
+                  - listitem [ref=e1154]: Post engagement metrics (likes, comments, shares)
+                  - listitem [ref=e1155]: Account insights (reach, impressions)
+                  - listitem [ref=e1156]: Hashtag performance analysis
+                - generic [ref=e1157]:
+                  - heading "Account Management" [level=3] [ref=e1158]
+                  - 'link "Permalink: Account Management" [ref=e1159] [cursor=pointer]':
+                    - /url: "#account-management"
+                    - img [ref=e1160]
+                - list [ref=e1162]:
+                  - listitem [ref=e1163]: List connected Facebook pages
+                  - listitem [ref=e1164]: Switch between business accounts
+                - generic [ref=e1165]:
+                  - heading "Rate Limiting & Best Practices" [level=2] [ref=e1166]
+                  - 'link "Permalink: Rate Limiting & Best Practices" [ref=e1167] [cursor=pointer]':
+                    - /url: "#rate-limiting--best-practices"
+                    - img [ref=e1168]
+                - paragraph [ref=e1170]: "The server implements intelligent rate limiting to comply with Instagram's API limits:"
+                - list [ref=e1171]:
+                  - listitem [ref=e1172]:
+                    - strong [ref=e1173]: Profile requests
+                    - text: ": 200 calls per hour"
+                  - listitem [ref=e1174]:
+                    - strong [ref=e1175]: Media requests
+                    - text: ": 200 calls per hour"
+                  - listitem [ref=e1176]:
+                    - strong [ref=e1177]: Publishing
+                    - text: ": 25 posts per day"
+                  - listitem [ref=e1178]:
+                    - strong [ref=e1179]: Insights
+                    - text: ": 200 calls per hour"
+                - generic [ref=e1180]:
+                  - heading "Best Practices" [level=3] [ref=e1181]
+                  - 'link "Permalink: Best Practices" [ref=e1182] [cursor=pointer]':
+                    - /url: "#best-practices"
+                    - img [ref=e1183]
+                - list [ref=e1185]:
+                  - listitem [ref=e1186]: Cache frequently accessed data
+                  - listitem [ref=e1187]: Use batch requests when possible
+                  - listitem [ref=e1188]: Implement exponential backoff for retries
+                  - listitem [ref=e1189]: Monitor rate limit headers
+                - generic [ref=e1190]:
+                  - heading "Error Handling" [level=2] [ref=e1191]
+                  - 'link "Permalink: Error Handling" [ref=e1192] [cursor=pointer]':
+                    - /url: "#error-handling"
+                    - img [ref=e1193]
+                - paragraph [ref=e1195]: "The server provides comprehensive error handling for common scenarios:"
+                - list [ref=e1196]:
+                  - listitem [ref=e1197]:
+                    - strong [ref=e1198]: Authentication errors
+                    - text: ": Invalid or expired tokens"
+                  - listitem [ref=e1199]:
+                    - strong [ref=e1200]: Permission errors
+                    - text: ": Missing required permissions"
+                  - listitem [ref=e1201]:
+                    - strong [ref=e1202]: Rate limiting
+                    - text: ": Automatic retry with backoff"
+                  - listitem [ref=e1203]:
+                    - strong [ref=e1204]: Network errors
+                    - text: ": Connection timeouts and retries"
+                  - listitem [ref=e1205]:
+                    - strong [ref=e1206]: API errors
+                    - text: ": Instagram-specific error responses"
+                - generic [ref=e1207]:
+                  - heading "Security Considerations" [level=2] [ref=e1208]
+                  - 'link "Permalink: Security Considerations" [ref=e1209] [cursor=pointer]':
+                    - /url: "#security-considerations"
+                    - img [ref=e1210]
+                - list [ref=e1212]:
+                  - listitem [ref=e1213]:
+                    - strong [ref=e1214]: Token Security
+                    - text: ": Store access tokens securely"
+                  - listitem [ref=e1215]:
+                    - strong [ref=e1216]: Environment Variables
+                    - text: ": Never commit tokens to version control"
+                  - listitem [ref=e1217]:
+                    - strong [ref=e1218]: HTTPS Only
+                    - text: ": All API calls use HTTPS"
+                  - listitem [ref=e1219]:
+                    - strong [ref=e1220]: Token Refresh
+                    - text: ": Implement automatic token refresh"
+                  - listitem [ref=e1221]:
+                    - strong [ref=e1222]: Audit Logging
+                    - text: ": Log all API interactions"
+                - generic [ref=e1223]:
+                  - heading "Development" [level=2] [ref=e1224]
+                  - 'link "Permalink: Development" [ref=e1225] [cursor=pointer]':
+                    - /url: "#development"
+                    - img [ref=e1226]
+                - generic [ref=e1228]:
+                  - heading "Project Structure" [level=3] [ref=e1229]
+                  - 'link "Permalink: Project Structure" [ref=e1230] [cursor=pointer]':
+                    - /url: "#project-structure"
+                    - img [ref=e1231]
+                - generic [ref=e1233]:
+                  - code [ref=e1235]: "ig-mcp/ ├── src/ │ ├── instagram_mcp_server.py # Main MCP server │ ├── instagram_client.py # Instagram API client │ ├── models/ # Data models │ ├── tools/ # MCP tools implementation │ ├── resources/ # MCP resources implementation │ └── prompts/ # MCP prompts implementation ├── tests/ # Unit and integration tests ├── config/ # Configuration files ├── requirements.txt # Python dependencies ├── .env.example # Environment variables template └── README.md # This file"
+                  - button "Copy" [ref=e1237] [cursor=pointer]:
+                    - img [ref=e1238]
+                - generic [ref=e1241]:
+                  - heading "Running Tests" [level=3] [ref=e1242]
+                  - 'link "Permalink: Running Tests" [ref=e1243] [cursor=pointer]':
+                    - /url: "#running-tests"
+                    - img [ref=e1244]
+                - generic [ref=e1246]:
+                  - generic [ref=e1247]:
+                    - generic [ref=e1248]: "# Run all tests"
+                    - text: python -m pytest tests/
+                    - generic [ref=e1249]: "# Run with coverage"
+                    - text: python -m pytest tests/ --cov=src/
+                    - generic [ref=e1250]: "# Run specific test file"
+                    - text: python -m pytest tests/test_instagram_client.py
+                  - button "Copy" [ref=e1252] [cursor=pointer]:
+                    - img [ref=e1253]
+                - generic [ref=e1256]:
+                  - heading "Contributing" [level=3] [ref=e1257]
+                  - 'link "Permalink: Contributing" [ref=e1258] [cursor=pointer]':
+                    - /url: "#contributing"
+                    - img [ref=e1259]
+                - list [ref=e1261]:
+                  - listitem [ref=e1262]: Fork the repository
+                  - listitem [ref=e1263]:
+                    - text: Create a feature branch (
+                    - code [ref=e1264]: git checkout -b feature/amazing-feature
+                    - text: )
+                  - listitem [ref=e1265]:
+                    - text: Commit your changes (
+                    - code [ref=e1266]: git commit -m 'Add amazing feature'
+                    - text: )
+                  - listitem [ref=e1267]:
+                    - text: Push to the branch (
+                    - code [ref=e1268]: git push origin feature/amazing-feature
+                    - text: )
+                  - listitem [ref=e1269]: Open a Pull Request
+                - generic [ref=e1270]:
+                  - heading "Troubleshooting" [level=2] [ref=e1271]
+                  - 'link "Permalink: Troubleshooting" [ref=e1272] [cursor=pointer]':
+                    - /url: "#troubleshooting"
+                    - img [ref=e1273]
+                - generic [ref=e1275]:
+                  - heading "Common Issues" [level=3] [ref=e1276]
+                  - 'link "Permalink: Common Issues" [ref=e1277] [cursor=pointer]':
+                    - /url: "#common-issues"
+                    - img [ref=e1278]
+                - list [ref=e1280]:
+                  - listitem [ref=e1281]:
+                    - paragraph [ref=e1282]:
+                      - strong [ref=e1283]: "\"Invalid Access Token\""
+                    - list [ref=e1284]:
+                      - listitem [ref=e1285]: Verify token is not expired
+                      - listitem [ref=e1286]: Check token permissions
+                      - listitem [ref=e1287]: Regenerate long-lived token
+                  - listitem [ref=e1288]:
+                    - paragraph [ref=e1289]:
+                      - strong [ref=e1290]: "\"Rate Limit Exceeded\""
+                    - list [ref=e1291]:
+                      - listitem [ref=e1292]: Wait for rate limit reset
+                      - listitem [ref=e1293]: Implement request queuing
+                      - listitem [ref=e1294]: Use batch requests
+                  - listitem [ref=e1295]:
+                    - paragraph [ref=e1296]:
+                      - strong [ref=e1297]: "\"Permission Denied\""
+                    - list [ref=e1298]:
+                      - listitem [ref=e1299]: Verify Instagram Business account setup
+                      - listitem [ref=e1300]: Check Facebook page connection
+                      - listitem [ref=e1301]: Review API permissions
+                - generic [ref=e1302]:
+                  - heading "Debug Mode" [level=3] [ref=e1303]
+                  - 'link "Permalink: Debug Mode" [ref=e1304] [cursor=pointer]':
+                    - /url: "#debug-mode"
+                    - img [ref=e1305]
+                - paragraph [ref=e1307]: "Enable debug logging by setting:"
+                - generic [ref=e1308]:
+                  - generic [ref=e1309]: LOG_LEVEL=DEBUG
+                  - button "Copy" [ref=e1311] [cursor=pointer]:
+                    - img [ref=e1312]
+                - generic [ref=e1315]:
+                  - heading "License" [level=2] [ref=e1316]
+                  - 'link "Permalink: License" [ref=e1317] [cursor=pointer]':
+                    - /url: "#license"
+                    - img [ref=e1318]
+                - paragraph [ref=e1320]:
+                  - text: This project is licensed under the MIT License - see the
+                  - link "LICENSE" [ref=e1321] [cursor=pointer]:
+                    - /url: /jlbadano/ig-mcp/blob/main/LICENSE
+                  - text: file for details.
+                - generic [ref=e1322]:
+                  - heading "Support" [level=2] [ref=e1323]
+                  - 'link "Permalink: Support" [ref=e1324] [cursor=pointer]':
+                    - /url: "#support"
+                    - img [ref=e1325]
+                - list [ref=e1327]:
+                  - listitem [ref=e1328]:
+                    - text: "📧 Email:"
+                    - link "support@example.com" [ref=e1329] [cursor=pointer]:
+                      - /url: mailto:support@example.com
+                  - listitem [ref=e1330]:
+                    - text: "🐛 Issues:"
+                    - link "GitHub Issues" [ref=e1331] [cursor=pointer]:
+                      - /url: https://github.com/jlbadano/ig-mcp/issues
+                  - listitem [ref=e1332]:
+                    - text: "📖 Documentation:"
+                    - link "Wiki" [ref=e1333] [cursor=pointer]:
+                      - /url: https://github.com/jlbadano/ig-mcp/wiki
+                - generic [ref=e1334]:
+                  - heading "Acknowledgments" [level=2] [ref=e1335]
+                  - 'link "Permalink: Acknowledgments" [ref=e1336] [cursor=pointer]':
+                    - /url: "#acknowledgments"
+                    - img [ref=e1337]
+                - list [ref=e1339]:
+                  - listitem [ref=e1340]:
+                    - link "Model Context Protocol" [ref=e1341] [cursor=pointer]:
+                      - /url: https://modelcontextprotocol.io/
+                    - text: by Anthropic
+                  - listitem [ref=e1342]:
+                    - link "Instagram Graph API" [ref=e1343] [cursor=pointer]:
+                      - /url: https://developers.facebook.com/docs/instagram-api/
+                    - text: by Meta
+                  - listitem [ref=e1344]:
+                    - link "FastMCP" [ref=e1345] [cursor=pointer]:
+                      - /url: https://github.com/jlowin/fastmcp
+                    - text: for rapid MCP development
+        - generic [ref=e1349]:
+          - generic [ref=e1352]:
+            - heading "About" [level=2] [ref=e1353]
+            - paragraph [ref=e1354]: A production-ready Model Context Protocol (MCP) server that enables AI applications to seamlessly interact with Instagram Business accounts.
+            - heading "Topics" [level=3] [ref=e1355]
+            - generic [ref=e1357]:
+              - link "instagram" [ref=e1358] [cursor=pointer]:
+                - /url: /topics/instagram
+              - link "facebook" [ref=e1359] [cursor=pointer]:
+                - /url: /topics/facebook
+              - link "mcp" [ref=e1360] [cursor=pointer]:
+                - /url: /topics/mcp
+              - link "mcp-server" [ref=e1361] [cursor=pointer]:
+                - /url: /topics/mcp-server
+            - heading "Resources" [level=3] [ref=e1362]
+            - link "Readme" [ref=e1364] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e1365]
+              - text: Readme
+            - heading "License" [level=3] [ref=e1367]
+            - link "MIT license" [ref=e1369] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e1370]
+              - text: MIT license
+            - link "Activity" [ref=e1373] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/activity
+              - img [ref=e1374]
+              - text: Activity
+            - heading "Stars" [level=3] [ref=e1376]
+            - link "114 stars" [ref=e1378] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/stargazers
+              - img [ref=e1379]
+              - strong [ref=e1381]: "114"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e1382]
+            - link "1 watching" [ref=e1384] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/watchers
+              - img [ref=e1385]
+              - strong [ref=e1387]: "1"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e1388]
+            - link "28 forks" [ref=e1390] [cursor=pointer]:
+              - /url: /jlbadano/ig-mcp/forks
+              - img [ref=e1391]
+              - strong [ref=e1393]: "28"
+              - text: forks
+            - link "Report repository" [ref=e1395] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fjlbadano%2Fig-mcp&report=jlbadano+%28user%29
+          - generic [ref=e1397]:
+            - heading "Releases" [level=2] [ref=e1398]:
+              - link "Releases" [ref=e1399] [cursor=pointer]:
+                - /url: /jlbadano/ig-mcp/releases
+            - generic [ref=e1400]: No releases published
+          - generic [ref=e1402]:
+            - heading "Packages" [level=2] [ref=e1403]:
+              - link "Packages" [ref=e1404] [cursor=pointer]:
+                - /url: /users/jlbadano/packages?repo_name=ig-mcp
+            - generic [ref=e1405]: No packages published
+          - generic [ref=e1407]:
+            - heading "Contributors 7" [level=2] [ref=e1408]:
+              - link "Contributors 7" [ref=e1409] [cursor=pointer]:
+                - /url: /jlbadano/ig-mcp/graphs/contributors
+                - text: Contributors
+                - generic "7" [ref=e1410]
+            - list [ref=e1411]:
+              - listitem [ref=e1412]:
+                - link "@jlbadano" [ref=e1413] [cursor=pointer]:
+                  - /url: https://github.com/jlbadano
+                  - img "@jlbadano" [ref=e1414]
+              - listitem [ref=e1415]:
+                - link "@dependabot[bot]" [ref=e1416] [cursor=pointer]:
+                  - /url: https://github.com/apps/dependabot
+                  - img "@dependabot[bot]" [ref=e1417]
+              - listitem [ref=e1418]:
+                - link "@claude" [ref=e1419] [cursor=pointer]:
+                  - /url: https://github.com/claude
+                  - img "@claude" [ref=e1420]
+              - listitem [ref=e1421]:
+                - link "@lwsinclair" [ref=e1422] [cursor=pointer]:
+                  - /url: https://github.com/lwsinclair
+                  - img "@lwsinclair" [ref=e1423]
+              - listitem [ref=e1424]:
+                - link "@zzgael" [ref=e1425] [cursor=pointer]:
+                  - /url: https://github.com/zzgael
+                  - img "@zzgael" [ref=e1426]
+              - listitem [ref=e1427]:
+                - link "@Copilot" [ref=e1428] [cursor=pointer]:
+                  - /url: https://github.com/apps/copilot-pull-request-reviewer
+                  - img "@Copilot" [ref=e1429]
+              - listitem [ref=e1430]:
+                - link "@Copilot" [ref=e1431] [cursor=pointer]:
+                  - /url: https://github.com/apps/copilot-swe-agent
+                  - img "@Copilot" [ref=e1432]
+          - generic [ref=e1434]:
+            - heading "Languages" [level=2] [ref=e1435]
+            - list [ref=e1440]:
+              - listitem [ref=e1441]:
+                - link "Python 98.4%" [ref=e1442] [cursor=pointer]:
+                  - /url: /jlbadano/ig-mcp/search?l=python
+                  - img [ref=e1443]
+                  - generic [ref=e1445]: Python
+                  - generic [ref=e1446]: 98.4%
+              - listitem [ref=e1447]:
+                - link "Dockerfile 1.6%" [ref=e1448] [cursor=pointer]:
+                  - /url: /jlbadano/ig-mcp/search?l=dockerfile
+                  - img [ref=e1449]
+                  - generic [ref=e1451]: Dockerfile
+                  - generic [ref=e1452]: 1.6%
+  - contentinfo [ref=e1454]:
+    - heading "Footer" [level=2] [ref=e1455]
+    - generic [ref=e1456]:
+      - generic [ref=e1457]:
+        - link "GitHub Homepage" [ref=e1458] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1459]
+        - generic [ref=e1461]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1462]:
+        - heading "Footer navigation" [level=3] [ref=e1463]
+        - list "Footer navigation" [ref=e1464]:
+          - listitem [ref=e1465]:
+            - link "Terms" [ref=e1466] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1467]:
+            - link "Privacy" [ref=e1468] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1469]:
+            - link "Security" [ref=e1470] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1471]:
+            - link "Status" [ref=e1472] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1473]:
+            - link "Community" [ref=e1474] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1475]:
+            - link "Docs" [ref=e1476] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1477]:
+            - link "Contact" [ref=e1478] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1479]:
+            - button "Manage cookies" [ref=e1481] [cursor=pointer]
+          - listitem [ref=e1482]:
+            - button "Do not share my personal information" [ref=e1484] [cursor=pointer]
