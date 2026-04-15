@@ -23,7 +23,7 @@ Rationale: The stacked reveal structure — seven short lines building one at a 
 - Posts first — establishes baseline
 
 **Variant B — Test:** Format C — Stacked Reveal Reel (`sr-pdh-grow-001.mp4`)
-- 15.0 seconds
+- 16.8 seconds
 - 7 lines, single-screen stacked reveal, no cuts
 - Static amber sky background (`bg-pdh-007-amber-sky-wide.jpg`, BGI-PDH-017)
 - Posts second — the format being validated as primary
@@ -32,9 +32,16 @@ Rationale: The stacked reveal structure — seven short lines building one at a 
 
 ### Variable Being Tested
 
-Visual format treatment — slide-style multi-cut Reel (Format A) vs. single-screen stacked reveal (Format C). Both carry the same quote content, same caption, same hashtag set, and same audio selection logic. The visual execution is the only variable.
+Total format vibe — each variant is tested as a complete creative package. Format A and Format C differ intentionally across visual treatment, background, duration, and audio track. This is a package-level test, not a single-variable test.
 
-Note: The background asset differs between formats (video loop vs. static image). This is an acknowledged confound — it cannot be isolated in this test because each background is native to its format. The formats are being tested as complete treatments, not as isolated background vs. motion variables. Future tests can isolate background type if the results warrant it.
+| Element | Variant A (Format A) | Variant B (Format C) |
+|---|---|---|
+| Visual structure | Slide-style, 6 cuts | Stacked reveal, no cuts |
+| Background | Video loop (sway) | Static amber sky image |
+| Duration | 26.4s | 16.8s |
+| Audio (baked in) | `calm-piano-indie-483190.mp3` | `perky-piano-512261.mp3` |
+
+**Decision (session-013):** Audio is baked into each MP4 at build time via FFmpeg. No manual audio attachment is required at publish. Each format's audio was selected to match its pacing and visual energy — calm piano suits Format A's slower slide rhythm; perky piano suits Format C's faster stacked reveal. The formats are being evaluated as total vibes, not isolated variables. Future tests can isolate individual elements if warranted.
 
 ---
 
@@ -121,7 +128,7 @@ This test is not a test of the quote, caption, hook, or hashtag strategy. It is 
 
 - Variant A publishes Day 0. Variant B publishes Day 5. Format B publishes Day 10.
 - Hashtag set P-3 applies to Variant A only. A replacement hashtag set must be confirmed for Variant B before Day 5. Contact SEO Agent.
-- Both Reel formats require manual audio attachment at publish time in the Instagram app — no audio is baked into either file. Apply the audio routing instructions in the staging package brief (`assets/staging/content-001-package-brief.md`).
+- Audio is baked into both MP4 files — no manual audio attachment required at publish time. Do not add a second audio track in the Instagram app.
 - Log each post in `/publishing/post-log.md` with the format label (Format A / Format C), publish timestamp, and audio track used.
 - Notify Analyst immediately at each publish event — post-publication intake begins at the moment each format goes live.
 

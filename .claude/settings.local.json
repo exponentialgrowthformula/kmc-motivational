@@ -85,7 +85,11 @@
       "Bash(uv sync:*)",
       "mcp__instagram__get_profile_info",
       "Bash(wc -l \"C:/Users/kirst/.claude/projects/c--Users-kirst-github-kmc-motivational/memory/\"*.md \"c:/Users/kirst/github/kmc-motivational/reference/session-start.md\")",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "mcp__playwright__browser_click",
+      "Bash(node scripts/build-reel.js)",
+      "Bash(node scripts/build-stacked-reveal.js)",
+      "Bash(git add:*)"
     ]
   }
 }

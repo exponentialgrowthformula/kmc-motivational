@@ -26,7 +26,7 @@ const OUTPUT_DIR = path.join(ROOT, 'assets', 'staging', 'production');
 const TEMP_DIR   = path.join(__dirname, '_tmp');
 
 const BG_VIDEO = path.join(
-  ROOT, 'assets', 'backgrounds', 'video-loops', 'pdh', 'intake',
+  ROOT, 'assets', 'backgrounds', 'video-loops', 'pdh',
   'bg-pdh-001-sway-slow.mp4'
 );
 const BG_FALLBACK_IMG = path.join(
@@ -39,6 +39,13 @@ const CHROME_PATH =
 
 const FINAL_VIDEO = path.join(OUTPUT_DIR, 'cr-pdh-grow-001.mp4');
 const FINAL_COVER = path.join(OUTPUT_DIR, 'cr-pdh-grow-001-cover.jpg');
+
+// ─── Audio ────────────────────────────────────────────────────────────────────
+// Set to a path under assets/audio/ to bake music into the final MP4.
+// null = no audio (video exported silent — set before sourcing a track).
+// Source tracks licensed for commercial Instagram use: Epidemic Sound, Artlist.
+const AUDIO_TRACK = path.join(ROOT, 'assets', 'audio', 'calm-piano-indie-483190.mp3');
+const MUSIC_VOL   = 0.25; // background level — low enough not to compete with text focus
 
 // Format B — Audio Carousel (cp = Carousel Post)
 // Individual JPEG per slide, uploaded as a carousel POST with audio added in Instagram.
@@ -300,10 +307,46 @@ function produceCarouselImages() {
   console.log(`✓ Carousel images: ${OUTPUT_DIR}`);
 }
 
-// ─── Step 7: Cleanup ─────────────────────────────────────────────────────────
+// ─── Step 7: Mix audio track ──────────────────────────────────────────────────
+
+function mixAudio(videoPath, totalDur) {
+  if (!AUDIO_TRACK) {
+    console.log('\n═══ Step 7: Audio mixing skipped (AUDIO_TRACK not set) ═══');
+    return;
+  }
+
+  console.log(`\n═══ Step 7: Mixing audio — ${path.basename(AUDIO_TRACK)} ═══`);
+
+  if (!fs.existsSync(AUDIO_TRACK)) {
+    throw new Error(`Audio track not found: ${AUDIO_TRACK}`);
+  }
+
+  // Rename silent video to temp path, produce audio-mixed version at original path
+  const silentTmp = videoPath.replace(/\.mp4$/, '_silent.mp4');
+  fs.renameSync(videoPath, silentTmp);
+
+  const fadeOutSt = Math.max(0, totalDur - 2.0).toFixed(3);
+
+  run(
+    `ffmpeg -y ` +
+    `-i "${ffPath(silentTmp)}" ` +
+    `-i "${ffPath(AUDIO_TRACK)}" ` +
+    `-filter_complex "[1:a]volume=${MUSIC_VOL},afade=in:st=0:d=1,afade=out:st=${fadeOutSt}:d=2[a]" ` +
+    `-map 0:v -map "[a]" ` +
+    `-c:v copy -c:a aac -b:a 192k ` +
+    `-shortest ` +
+    `"${ffPath(videoPath)}"`,
+    `Mix audio — vol=${MUSIC_VOL}, fade out at ${fadeOutSt}s`
+  );
+
+  fs.unlinkSync(silentTmp);
+  console.log(`✓ Audio mixed: ${videoPath}`);
+}
+
+// ─── Step 8: Cleanup ─────────────────────────────────────────────────────────
 
 function cleanup() {
-  console.log('\n═══ Step 7: Cleaning up temp files ═══');
+  console.log('\n═══ Step 8: Cleaning up temp files ═══');
   fs.rmSync(TEMP_DIR, { recursive: true, force: true });
   console.log('✓ Temp files removed.');
 }
@@ -343,7 +386,10 @@ function cleanup() {
     // Step 6: Carousel images (Format B)
     produceCarouselImages();
 
-    // Step 7: Cleanup
+    // Step 7: Mix audio into Format A video (Format B carousel images are audio-free)
+    mixAudio(FINAL_VIDEO, TOTAL_DUR);
+
+    // Step 8: Cleanup
     cleanup();
 
     console.log('\n╔═════════════════════════════════════════════╗');

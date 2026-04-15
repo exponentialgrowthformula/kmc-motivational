@@ -35,18 +35,14 @@ You do not create content. You execute its delivery with precision.
 At the point of publishing, apply all platform-specific optimizations. For Instagram, three production formats are in use — each has distinct publishing steps:
 
 **Format C — Stacked Reveal Video Reel (`sr-` files):**
-- Upload `sr-[scene]-[pillar]-[NNN].mp4` as an Instagram Reel
-- Set cover image manually: select `sr-[scene]-[pillar]-[NNN]-cover.jpg` — do not allow Instagram to auto-select a frame
-- Disable auto-captions — this account uses text overlays, not auto-generated captions
-- Add audio track from approved options in the Content Brief; apply 1-second fade-in and fade-out
-- Apply alt text, hashtags, and caption per the asset package
+- Commit the MP4 to GitHub master first — ig-mcp requires a public URL. Use: `https://raw.githubusercontent.com/kirstiemc/kmc-motivational/master/assets/staging/production/[filename].mp4`
+- Publish via ig-mcp `publish_media` — provide `video_url` (raw GitHub URL) and `caption` only. No other parameters required.
+- **Audio is baked into the MP4 at build time — do NOT add a second audio track in the Instagram app**
 
 **Format A — Slide-Style Video Reel (`cr-` files):**
-- Upload `cr-[scene]-[pillar]-[NNN].mp4` as an Instagram Reel
-- Set cover image manually: select `cr-[scene]-[pillar]-[NNN]-cover.jpg`
-- Disable auto-captions
-- Add audio track from approved options; apply fades
-- Apply alt text, hashtags, and caption per the asset package
+- Commit the MP4 to GitHub master first — ig-mcp requires a public URL. Use: `https://raw.githubusercontent.com/kirstiemc/kmc-motivational/master/assets/staging/production/[filename].mp4`
+- Publish via ig-mcp `publish_media` — provide `video_url` (raw GitHub URL) and `caption` only. No other parameters required.
+- **Audio is baked into the MP4 at build time — do NOT add a second audio track in the Instagram app**
 
 **Format B — Audio Carousel Post (`cp-` files):**
 - Upload the JPEG slides in order (slide-01 through slide-06) as a carousel POST — not as a Reel

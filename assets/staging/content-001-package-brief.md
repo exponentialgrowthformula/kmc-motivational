@@ -13,7 +13,9 @@
 - **Format C:** APPROVED — `sr-pdh-grow-001.mp4` + `sr-pdh-grow-001-cover.jpg` → `/assets/staging/production/`
 - **Background (Format A + B):** `bg-pdh-001-sway-slow.mp4` (BGV-PDH-004)
 - **Background (Format C):** `bg-pdh-007-amber-sky-wide.jpg` (BGI-PDH-017) — static image
-- **Audio:** "I Speak Blessings" (Delana Hope) or "Resiliencia" — Publisher selects at scheduling
+- **Audio (Format A):** `calm-piano-indie-483190.mp3` — baked into MP4 at build time. Do not add a second track.
+- **Audio (Format B):** Added in Instagram app at post time (required for Reels tab eligibility)
+- **Audio (Format C):** `perky-piano-512261.mp3` — baked into MP4 at build time. Do not add a second track.
 
 ---
 
@@ -60,18 +62,19 @@
 
 | Asset ID | File Name | Format | File Size | Status | Location |
 |---|---|---|---|---|---|
-| CPA-001-C1 | `sr-pdh-grow-001.mp4` | MP4, H.264, 1080x1920px, 15.0s | 837KB | Approved 2026-04-13 | `/assets/staging/production/` |
+| CPA-001-C1 | `sr-pdh-grow-001.mp4` | MP4, H.264, 1080x1920px, 16.8s | 1.0MB | Approved 2026-04-13 (rebuilt 2026-04-15 — beat-sync timing + audio baked in) | `/assets/staging/production/` |
 | CPA-001-C2 | `sr-pdh-grow-001-cover.jpg` | JPEG, 1080x1920px | 123KB | Approved 2026-04-13 | `/assets/staging/production/` |
 
 **Format C production details:**
 - Background: `bg-pdh-007-amber-sky-wide.jpg` (BGI-PDH-017) — static image, not the video loop used in Formats A+B
 - Typography: Cormorant Garamond 500, #F0EAD9, 1.5px dark outline (#0F0802) with paint-order: stroke fill
-- 7 lines, 1.9s interval between reveals (1.1s hold + 0.8s fade per line), line 7 hold 2.3s, total 15.0s
-- Build script: `scripts/build-stacked-reveal.js` (primary, updated to these settings)
+- 7 lines, instant pop reveal (no fade). Beat interval 1.1625s (Canva-verified, 3/4 feel). Pattern: lines 1–2 × 1 beat, lines 3–6 × 2 beats, line 7 × 4 beat hold. Audio offset 2 beats. Total 16.8s.
+- Build script: `scripts/build-stacked-reveal.js`
 - HTML source: `scripts/stacked-outline/` (lines 1–7)
 - QC approved 2026-04-12 — 8 frames extracted, all 7 lines clean, gold accent confirmed
+- Rebuilt 2026-04-15: beat-sync timing dialled to `perky-piano-512261`, audio baked in via FFmpeg
 
-**Audio routing:** No audio baked in — Publisher adds music in the Instagram app at time of posting (same as Format A).
+**Audio routing:** `perky-piano-512261.mp3` baked into MP4 at build time (vol 0.25, 2-beat audio offset). Do not add a second audio track in the Instagram app.
 
 ---
 
@@ -99,37 +102,35 @@
 
 ## Audio Routing
 
-Audio selection is NOT embedded in any asset format. It is the Publisher's responsibility at scheduling time for Formats A, B, and C.
+**Audio is baked into Format A and Format C MP4 files at build time.** No manual audio selection is required at publish for Reels. Do not add a second audio track in the Instagram app.
 
-**Preferred options (from Content Brief and Discoverability Brief):**
-1. "I Speak Blessings" — Delana Hope (confirm availability in Instagram native audio library at time of scheduling)
-2. "Resiliencia" — instrumental version (confirm availability in Instagram native audio library at time of scheduling)
+| Format | Track | Volume | Source |
+|---|---|---|---|
+| Format A (`cr-`) | `calm-piano-indie-483190.mp3` | 0.25 (25%) | Pixabay CC0 |
+| Format C (`sr-`) | `perky-piano-512261.mp3` | 0.25 (25%) | Pixabay CC0 |
+| Format B (`cp-`) | Added in Instagram app at post time | Low | Instagram native library |
 
-**Fallback rule:** If neither track is available, select the most-played instrumental from the "mindset" or "personal growth" trending audio shelf at the time of scheduling. Do not delay the post for audio.
+**Format B audio:** Format B (audio carousel) is the only format requiring manual audio selection. Add music from the Instagram native library at posting time — this is what grants Reels tab eligibility for the carousel. Preferred tracks: "I Speak Blessings" (Delana Hope) or "Resiliencia" (instrumental). Fallback: most-played instrumental from the "mindset" or "personal growth" trending shelf at time of posting.
 
-**Audio settings the Publisher must apply (all formats):**
-- Track must be instrumental only — no lyrics
-- Volume: low (atmosphere, not dominant)
-- Tempo: 50–90 BPM ambient or lo-fi range
-- Audio fade-in: 1 second at reel start
-- Audio fade-out: 1 second at reel end
-- Source requirement: Instagram native audio library or Artlist/Artgrid track with a social media license that explicitly covers Instagram Reels. Do not use tracks sourced from YouTube, SoundCloud, or unverified sources.
+**Build scripts:** Audio is mixed via FFmpeg `mixAudio()` in `scripts/build-reel.js` (Format A) and `scripts/build-stacked-reveal.js` (Format C). `AUDIO_TRACK` and `MUSIC_VOL` constants at the top of each script control track selection and volume for future builds.
 
 ---
 
 ## Publisher Instructions — Format A: Instagram Reel
 
-Upload `cr-pdh-grow-001.mp4` as an Instagram Reel. This is a video file with no audio baked in. Audio must be added in the Instagram app at time of posting.
+Upload `cr-pdh-grow-001.mp4` as an Instagram Reel via ig-mcp. Audio is baked in — no in-app audio step required.
+
+**ig-mcp publish note:** `publish_media` requires a publicly accessible URL. Commit the file to the public GitHub repo (master branch) first, then use:
+`https://raw.githubusercontent.com/kirstiemc/kmc-motivational/master/assets/staging/production/cr-pdh-grow-001.mp4`
 
 **Pre-scheduling checklist for Format A:**
-- [ ] Upload `cr-pdh-grow-001.mp4` as a Reel
-- [ ] Set cover image: manually select `cr-pdh-grow-001-cover.jpg` at upload — do not allow Instagram to auto-select a frame from the video
-- [ ] Disable auto-captions at upload — this account uses text overlays, not auto-generated captions
-- [ ] Add audio track from approved options (see Audio Routing above); apply fades
-- [ ] Apply alt text: "Personal growth quote: identity shift — bold white text over a cinematic background. For people working on becoming who they know they can be."
-- [ ] Confirm caption complete: includes "identity shift" in first line, secondary keywords in body, CTA "Save this when you need a reminder that you are not behind", hashtag set P-3 (#identityshift #personalgrowthjourney #mindsetshift) at end — separated by single line break below CTA
+- [ ] Commit `cr-pdh-grow-001.mp4` to GitHub (master) — required before ig-mcp can access the file
+- [ ] Publish via ig-mcp `publish_media` with `video_url` (raw GitHub URL above) and `caption` (see Section 1 of the approval package)
+- [ ] Audio is already baked in — do NOT add a second audio track in the Instagram app
+- [ ] Confirm caption complete: includes "identity shift" in first line, secondary keywords in body, CTA, hashtag set P-3 (#identityshift #personalgrowthjourney #mindsetshift) at end — separated by single line break below CTA
 - [ ] Log hashtag set P-3 as used on post 001. Do not use P-3 or repeat any of these three tags on post 002.
-- [ ] Confirm scheduling timing against content calendar
+- [ ] Notify Analyst immediately upon publish — AB-001 measurement window begins at publish time
+- [ ] Register AB-001 as Active in `/analytics/test-log.md`
 
 ---
 
@@ -154,13 +155,17 @@ Add music from the Instagram library within the post creation flow. Adding music
 
 ## Publisher Instructions — Format C: Stacked Reveal Reel
 
-Upload `sr-pdh-grow-001.mp4` as an Instagram Reel. This is a video file with no audio baked in. Audio must be added in the Instagram app at time of posting.
+Upload `sr-pdh-grow-001.mp4` as an Instagram Reel via ig-mcp. Audio (`perky-piano-512261.mp3`) is baked into the MP4 — do not add a second audio track in the Instagram app.
+
+**ig-mcp publish note:** `publish_media` requires a publicly accessible URL. Commit the file to the public GitHub repo (master branch) first, then use:
+`https://raw.githubusercontent.com/kirstiemc/kmc-motivational/master/assets/staging/production/sr-pdh-grow-001.mp4`
 
 **Pre-scheduling checklist for Format C:**
-- [ ] Upload `sr-pdh-grow-001.mp4` as a Reel
-- [ ] Set cover image: manually select `sr-pdh-grow-001-cover.jpg` at upload — do not allow Instagram to auto-select a frame from the video
+- [ ] Commit `sr-pdh-grow-001.mp4` to GitHub (master) — required before ig-mcp can access the file
+- [ ] Publish via ig-mcp `publish_media` with `video_url` (raw GitHub URL above) and `caption`
+- [ ] Set cover image: manually select `sr-pdh-grow-001-cover.jpg` — do not allow Instagram to auto-select a frame
 - [ ] Disable auto-captions at upload — this account uses text overlays, not auto-generated captions
-- [ ] Add audio track from approved options (see Audio Routing above); apply fades
+- [ ] Audio is already baked in — do NOT add a second audio track in the Instagram app
 - [ ] Apply alt text: "Personal growth quote: identity shift — bold white text over a cinematic background. For people working on becoming who they know they can be."
 - [ ] Confirm caption complete — same caption structure as Format A. Coordinate hashtag use with Format A scheduling so hashtag rotation rules are respected. Consult the content calendar.
 - [ ] Note: Format C is the primary format for A/B testing against Format A. Analyst to issue A/B test brief before scheduling to confirm test parameters and sequencing.

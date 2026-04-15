@@ -38,23 +38,43 @@ const CHROME_PATH =
 const FINAL_VIDEO = path.join(OUTPUT_DIR, 'sr-pdh-grow-001.mp4');
 const FINAL_COVER = path.join(OUTPUT_DIR, 'sr-pdh-grow-001-cover.jpg');
 
+// ─── Audio ────────────────────────────────────────────────────────────────────
+// Set to a path under assets/audio/ to bake music into the final MP4.
+// null = no audio (video exported silent — set before sourcing a track).
+// Source tracks licensed for commercial Instagram use: Pixabay CC0.
+//
+// IMPORTANT: Reveal timing below is TRACK-SPECIFIC. When switching to a
+// different backing track, derive a new beat interval via Canva beat tracker
+// (or equivalent) and dial in a custom AUDIO_OFFSET + HOLD_DURS to match.
+// Do not reuse these values for a different track.
+const AUDIO_TRACK  = path.join(ROOT, 'assets', 'audio', 'perky-piano-512261.mp3');
+const MUSIC_VOL    = 0.25; // background level — low enough not to compete with text focus
+
+// ─── Reveal timing — perky-piano-512261 ──────────────────────────────────────
+// Beat interval:  1.1625s (Canva beat tracker, confirmed 2026-04-15)
+// Time signature: 3/4 feel (1-2-3, 1-2-3)
+// Audio offset:   2 beats (2.325s) — aligns line 1 pop to beat 3 of the track
+// Reveal pattern: lines 1-2 × 1 beat, lines 3-6 × 2 beats, line 7 × 4 beat hold
+const AUDIO_OFFSET = 2.325; // seconds into track to begin playback
+
 // ─── Reveal timing ───────────────────────────────────────────────────────────
 
 const LINE_COUNT   = 7;
-const REVEAL_DUR   = 0.8;  // seconds — each line alpha-fades in over this duration
+const REVEAL_DUR   = 0.042;  // seconds — 1 frame (instant pop, no fade)
 const FADE_IN_DUR  = 0.5;  // seconds — background fades in from black at start
 const FADE_OUT_DUR = 0.5;  // seconds — fades to black at end
 
 // How long each line is FULLY VISIBLE before the next line begins to fade in.
 // Line 7 hold = final hold with all lines visible simultaneously.
+// Timing locked to perky-piano-512261 (beat = 1.1625s). See note above.
 const HOLD_DURS = [
-  1.1,  // Line 1 — opening line
-  1.1,  // Line 2 — naming the internal story
-  1.1,  // Line 3 — fulcrum (ownership redirect)
-  1.1,  // Line 4 — opens the door
-  1.1,  // Line 5 — identity framework, declarative
-  1.1,  // Line 6 — present-tense grounding
-  2.3,  // Line 7 — payoff. Hold the full composition.
+  1.121,  // Line 1 — opening line       (1 beat)
+  1.121,  // Line 2 — naming the internal story (1 beat)
+  2.283,  // Line 3 — fulcrum (ownership redirect) → pace drops to 2 beats
+  2.283,  // Line 4 — opens the door     (2 beats)
+  2.283,  // Line 5 — identity framework, declarative
+  2.283,  // Line 6 — present-tense grounding
+  4.650,  // Line 7 — payoff. Hold the full composition. (4 beats)
 ];
 
 // Reveal start time for each line (when the alpha fade-in begins).
@@ -66,7 +86,7 @@ const REVEAL_TIMES = HOLD_DURS.reduce((acc, hold, i) => {
   acc.push(parseFloat((prev + REVEAL_DUR + HOLD_DURS[i - 1]).toFixed(3)));
   return acc;
 }, []);
-// [0, 3.3, 5.9, 8.5, 11.1, 13.7, 16.3]
+// [0, 1.163, 2.325, 3.488, 4.650, 5.813, 6.975]  — 1 beat @ 1.1625s
 
 // When all 7 lines are fully visible: last reveal time + REVEAL_DUR
 const ALL_VISIBLE_AT = parseFloat((REVEAL_TIMES[LINE_COUNT - 1] + REVEAL_DUR).toFixed(3));
@@ -276,10 +296,46 @@ function produceCover(bgFrame) {
   console.log(`✓ Cover: ${FINAL_COVER}`);
 }
 
-// ─── Step 5: Cleanup ──────────────────────────────────────────────────────────
+// ─── Step 5: Mix audio track ──────────────────────────────────────────────────
+
+function mixAudio(videoPath, totalDur) {
+  if (!AUDIO_TRACK) {
+    console.log('\n═══ Step 5: Audio mixing skipped (AUDIO_TRACK not set) ═══');
+    return;
+  }
+
+  console.log(`\n═══ Step 5: Mixing audio — ${path.basename(AUDIO_TRACK)} ═══`);
+
+  if (!fs.existsSync(AUDIO_TRACK)) {
+    throw new Error(`Audio track not found: ${AUDIO_TRACK}`);
+  }
+
+  // Rename silent video to temp path, produce audio-mixed version at original path
+  const silentTmp = videoPath.replace(/\.mp4$/, '_silent.mp4');
+  fs.renameSync(videoPath, silentTmp);
+
+  const fadeOutSt = Math.max(0, totalDur - 2.0).toFixed(3);
+
+  run(
+    `ffmpeg -y ` +
+    `-i "${ffPath(silentTmp)}" ` +
+    `-ss ${AUDIO_OFFSET} -i "${ffPath(AUDIO_TRACK)}" ` +
+    `-filter_complex "[1:a]volume=${MUSIC_VOL},afade=in:st=0:d=1,afade=out:st=${fadeOutSt}:d=2[a]" ` +
+    `-map 0:v -map "[a]" ` +
+    `-c:v copy -c:a aac -b:a 192k ` +
+    `-shortest ` +
+    `"${ffPath(videoPath)}"`,
+    `Mix audio — vol=${MUSIC_VOL}, fade out at ${fadeOutSt}s`
+  );
+
+  fs.unlinkSync(silentTmp);
+  console.log(`✓ Audio mixed: ${videoPath}`);
+}
+
+// ─── Step 6: Cleanup ──────────────────────────────────────────────────────────
 
 function cleanup() {
-  console.log('\n═══ Step 5: Cleaning up temp files ═══');
+  console.log('\n═══ Step 6: Cleaning up temp files ═══');
   fs.rmSync(TEMP_DIR, { recursive: true, force: true });
   console.log('✓ Temp files removed.');
 }
@@ -307,7 +363,10 @@ function cleanup() {
     // Step 4: Cover JPEG
     produceCover(bgFrame);
 
-    // Step 5: Cleanup
+    // Step 5: Mix audio into video
+    mixAudio(FINAL_VIDEO, TOTAL_DUR);
+
+    // Step 6: Cleanup
     cleanup();
 
     console.log('\n╔═════════════════════════════════════════════════════╗');
