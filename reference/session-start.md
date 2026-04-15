@@ -25,7 +25,7 @@
 
 ## Next Actions
 
-1. **Setup: GitHub repo** — Initialize git repo, push to GitHub as a public repo. Raw GitHub URLs (`raw.githubusercontent.com`) will serve asset files to Postiz/Instagram API — no additional file hosting needed. ← next session
+1. ~~**Setup: GitHub repo**~~ — **DONE** (session-012). Repo: https://github.com/exponentialgrowthformula/kmc-motivational. Raw URLs operational. GitHub CLI authenticated as `exponentialgrowthformula`.
 2. **Setup: Postiz MCP** — Install and configure Postiz for Instagram scheduling. Postiz is the publish mechanism for all three formats (ig-mcp cannot be used — music must be added pre-publish, which requires a draft creation flow the Graph API does not support). ← next session
 3. **Publisher** — Once Postiz + Drive are operational, schedule content-001. All 3 formats approved in staging. A/B test brief filed at `analytics/ab-test-brief-001.md`. Publishing sequence: Variant A (Format A) Day 0 → Variant B (Format C) Day 5 → Format B Day 10.
 4. **SEO Agent** — Confirm replacement hashtag set for Variant B (Format C) before Day 5. P-3 is assigned to Variant A only.
