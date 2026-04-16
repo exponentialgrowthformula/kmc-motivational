@@ -31,6 +31,57 @@
 
 ---
 
+## Content Piece File Naming Convention
+
+All produced content assets follow this naming pattern:
+
+```
+{format}-{bg-category}-{pillar}-{sequence}
+```
+
+### Segments
+
+| Segment | Description | Example |
+|---|---|---|
+| `{format}` | Format prefix — identifies the production format (see Format Codes below) | `sr`, `cr`, `cp` |
+| `{bg-category}` | Background scene category code — matches the Scene Category Codes table | `pdh`, `dfc`, `dwr` |
+| `{pillar}` | Content pillar shorthand — identifies the content pillar the piece belongs to (see Pillar Codes below) | `grow`, `worth` |
+| `{sequence}` | Zero-padded content sequence number | `001`, `002` |
+
+### Format Codes
+
+| Code | Format | Output Type |
+|---|---|---|
+| `sr` | Format C — Stacked Reveal | MP4 video + cover JPEG |
+| `cr` | Format A — Slide-Style Reel | MP4 video + cover JPEG |
+| `cp` | Format B — Audio Carousel | JPEG slides (slide-01 through slide-06) |
+
+### Pillar Codes
+
+| Code | Pillar | First used |
+|---|---|---|
+| `grow` | Personal Growth & Becoming | content-001 |
+| `worth` | Confidence & Self-Worth | content-002 |
+
+Add new pillar codes here as new pillars enter production.
+
+### Examples
+
+| File | Reads as |
+|---|---|
+| `sr-pdh-grow-001.mp4` | Format C / PDH background / Personal Growth / content-001 |
+| `cr-pdh-grow-001.mp4` | Format A / PDH background / Personal Growth / content-001 |
+| `cp-pdh-grow-001-slide-01.jpg` | Format B slide 1 / PDH background / Personal Growth / content-001 |
+| `sr-dfc-worth-002.mp4` | Format C / DFC background / Confidence & Self-Worth / content-002 |
+
+### Notes
+
+- The `{bg-category}` segment reflects the actual background used in the final build, not the content brief's background direction. If the background is changed during production, the filename must be updated to match.
+- Format B (carousel) appends `-slide-01` through `-slide-06` after the sequence number.
+- Cover JPEGs append `-cover` after the sequence number: e.g. `sr-dfc-worth-002-cover.jpg`.
+
+---
+
 ## Asset Type Codes
 
 | Code | Asset Type | Location |
@@ -59,6 +110,8 @@ Assets produced for specific content pieces. Held in `/assets/staging/production
 | CPA-001-B6 | content-001 | Format B — Audio Carousel Slide 6 | `cp-pdh-grow-001-slide-06.jpg` | 120KB | Approved | 2026-04-09 | `/assets/staging/production/` | Slide 6 of 6 — Close anchor + supporting + CTA ("Save this."). |
 | CPA-001-C1 | content-001 | Format C — Stacked Reveal Video | `sr-pdh-grow-001.mp4` | 837KB | Approved | 2026-04-13 | `/assets/staging/production/` | Instagram Reel upload file. No audio baked in — Publisher adds music in Instagram app at time of posting. Background: BGI-PDH-017 (bg-pdh-007-amber-sky-wide.jpg) — static image. Duration: 15.0s. 7 lines reveal progressively at 1.9s intervals (1.1s hold + 0.8s fade per line); line 7 hold 2.3s. Typography: Cormorant Garamond 500, #F0EAD9, 1.5px dark outline (#0F0802) with paint-order: stroke fill. Built with scripts/build-stacked-reveal.js. HTML source: scripts/stacked-outline/ (lines 1–7). QC approved 2026-04-12 (8 frames extracted, all 7 lines clean, gold accent confirmed). Supersedes any prior v1 Format C entry referencing dark bg, no outline, or slow pacing — those settings are retired. |
 | CPA-001-C2 | content-001 | Format C — Stacked Reveal Cover | `sr-pdh-grow-001-cover.jpg` | 123KB | Approved | 2026-04-13 | `/assets/staging/production/` | Cover JPEG for Format C Reel. Must be manually selected at upload — do not allow Instagram to auto-select a frame. Background: BGI-PDH-017 (bg-pdh-007-amber-sky-wide.jpg). |
+| CPA-002-C1 | content-002 | Format C — Stacked Reveal Video | `sr-dfc-worth-002.mp4` | — | Published | 2026-04-16 | `/assets/staging/production/` | Published 2026-04-16. Media ID `18093691952146858`. Audio baked in: `perky-piano-512261`. Background: BGI-DFC-001 (bg-dfc-001-glowing-tree.jpg). Duration: ~21s. 7 lines reveal progressively; line 7 slow fade (2.3s). Typography: Cormorant Garamond 500, #F0EAD9, all lines same colour (no gold accent). Built with scripts/build-stacked-reveal-002.js. |
+| CPA-002-C2 | content-002 | Format C — Stacked Reveal Cover | `sr-dfc-worth-002-cover.jpg` | — | Published | 2026-04-16 | `/assets/staging/production/` | Cover JPEG for content-002 Format C Reel. Background: BGI-DFC-001 (bg-dfc-001-glowing-tree.jpg). |
 
 ---
 
