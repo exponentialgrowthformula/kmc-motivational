@@ -9,8 +9,6 @@
 
 | Date | Action |
 |---|---|
-| **2026-04-19** | Publisher — publish content-003 Format A (slot 3) — pipeline dependent |
-| **2026-04-19** | SEO Agent — assign P-6 for content-001 Format B before Apr 20 (no overlap with P-3 or P-4) |
 | **2026-04-20** | Publisher — publish content-001 Format B carousel `cp-pdh-grow-001-slide-01..06.jpg`, add music in-app, use P-6 (slot 4) |
 | **2026-04-21** | Publisher — publish content-002 Format A (slot 5 — pipeline dependent) |
 | **2026-04-21** | Analyst — pull content-003 Format C 24h read (posted Apr 20) |
