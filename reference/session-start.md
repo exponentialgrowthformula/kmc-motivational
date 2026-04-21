@@ -1,6 +1,6 @@
 # Session Start — @exponentialgrowthformula_
 
-**Last updated:** 2026-04-20 (session-024)
+**Last updated:** 2026-04-21 (session-025)
 **Update this file at the end of every session.**
 
 ---
@@ -12,10 +12,12 @@
 | **2026-04-20** | Publisher — publish content-001 Format B carousel `cp-pdh-grow-001-slide-01..06.jpg`, add music in-app, use P-6 (slot 4) |
 | **2026-04-21** | Publisher — publish content-002 Format A (slot 5 — pipeline dependent) |
 | **2026-04-21** | Analyst — pull content-003 Format C 24h read (posted Apr 20) |
+| **2026-04-22** | Analyst — pull content-004 Format C 24h read (posted Apr 21) |
 | **2026-04-22** | Analyst — pull Variant A 7-day read (001-A posted Apr 15) |
 | **2026-04-23** | Publisher — publish content-001 Format C `sr-pdh-grow-001.mp4`, hashtag P-4: `#growthmindset #selfgrowth #becomingbetter` (slot 7 — AB-001 Variant B) |
 | **2026-04-24** | Analyst — pull Variant B (001-C) 24h read (posted Apr 23) |
 | **2026-04-27** | Analyst — pull content-003 Format C 7-day read |
+| **2026-04-28** | Analyst — pull content-004 Format C 7-day read |
 | **2026-04-30** | Analyst — pull Variant B (001-C) 7-day read, begin AB-001 evaluation |
 | **2026-04-30–May 2** | Analyst — deliver AB-001 findings in Weekly Insight Brief |
 | **2026-06-13** | Token refresh — Instagram access token expires, refresh before this date |
@@ -76,6 +78,72 @@ Line 7: The permission was always yours to give.
 
 ---
 
+### Content-004 "What You Notice Grows"
+
+| Item | Status |
+|---|---|
+| Content Brief 004 — all formats | **APPROVED** — `content-briefs/content-brief-004.md` |
+| Discoverability Brief 004 | **DONE** — appended to `content-briefs/content-brief-004.md` · Hashtag set P-8 |
+| Format C Build 004 | **PUBLISHED 2026-04-21** — Media ID `17905711623404988` — `sr-dwr-grat-004.mp4` → `/assets/published/2026-04/instagram/` |
+| Format A Build 004 | **BLOCKED** — needs slide HTML files (Designer) |
+| Format B Build 004 | **BLOCKED** — depends on Format A |
+
+**Pillar:** Gratitude
+**Format C build spec:** background `bg-dwr-004-rocky-shore-glow.jpg`, scrimOpacity 0, audio `perky-piano-512261.mp3`
+**Hashtag set:** P-8 (`#gratitude #gratitudepractice #positivemindset`)
+
+---
+
+### Content-005 "Scarcity Sounds Like This"
+
+| Item | Status |
+|---|---|
+| Content Brief 005 — all formats | **APPROVED** — `content-briefs/content-brief-005.md` |
+| Discoverability Brief 005 | **DONE** — appended to `content-briefs/content-brief-005.md` · Hashtag set P-9 |
+| Format C Build 005 | **STAGED 2026-04-21** — `sr-pdh-abnd-005.mp4` + `sr-pdh-abnd-005-cover.jpg` → `assets/staging/production/` |
+| Format A Build 005 | **BLOCKED** — needs slide HTML files (Designer) |
+| Format B Build 005 | **BLOCKED** — depends on Format A |
+
+**Pillar:** Abundance Mindset
+**Format C build spec:** background `bg-pdh-005-mid-glowup.jpg`, scrimOpacity 0, audio `perky-piano-512261.mp3`
+**Cover note:** Cover extracted from video frame (t=12s) — source image `bg-pdh-005-mid-glowup.jpg` is 5412×8118 and OOMs the cover compositor. Downscale this image before next use.
+**Hashtag set:** P-9 (`#mindset #wealthmindset #scarcitymindset`)
+
+---
+
+### Content-006 "The Real Prize"
+
+| Item | Status |
+|---|---|
+| Content Brief 006 — all formats | **APPROVED** — `content-briefs/content-brief-006.md` |
+| Discoverability Brief 006 | **DONE** — appended to `content-briefs/content-brief-006.md` · Hashtag set P-10 |
+| Format C Build 006 | **STAGED 2026-04-21** — `sr-pdh-bizg-006.mp4` + `sr-pdh-bizg-006-cover.jpg` → `assets/staging/production/` |
+| Format A Build 006 | **BLOCKED** — needs slide HTML files (Designer) |
+| Format B Build 006 | **BLOCKED** — depends on Format A |
+
+**Pillar:** Business Growth
+**Format C build spec:** background `bg-pdh-001-horiz-amber-band.jpg`, scrimOpacity 0, audio `perky-piano-512261.mp3`
+**Hashtag set:** P-10 (`#entrepreneurmindset #solopreneur #timeiswealth`)
+
+---
+
+### Content-007 "Confidence Is a Daily Choice"
+
+| Item | Status |
+|---|---|
+| Content Brief 007 — all formats | **APPROVED** — `content-briefs/content-brief-007.md` |
+| Discoverability Brief 007 | **DONE** — appended to `content-briefs/content-brief-007.md` · Hashtag set P-11 |
+| Format C Build 007 | **STAGED 2026-04-21** — `sr-dfc-worth-007.mp4` + `sr-dfc-worth-007-cover.jpg` → `assets/staging/production/` |
+| Format A Build 007 | **BLOCKED** — needs slide HTML files (Designer) |
+| Format B Build 007 | **BLOCKED** — depends on Format A |
+
+**Pillar:** Confidence & Self-Worth
+**Format C build spec:** background `bg-dfc-004-amber-backlight-forest.jpg`, scrimOpacity 0.45, audio `perky-piano-512261.mp3`
+**Background note:** Brief calls for "soft warm interior light through window" — no matching asset in library. Used `bg-dfc-004-amber-backlight-forest.jpg` as closest available warm/intimate DFC image.
+**Hashtag set:** P-11 (`#selflove #selfconfidence #confidencejourney`)
+
+---
+
 ### Asset Library (as of 2026-04-08)
 
 19/52 image target. PDH: 7, DFC: 6, DWR: 4, SNL: 2, DET: 0, DIW: 0. Video loops: PDH ×2. Audio: 6 tracks in `assets/audio/` — all Pixabay CC0.
@@ -88,11 +156,13 @@ Line 7: The permission was always yours to give.
 2. **Publish content-001 Format C** — 2026-04-23 (AB-001 Variant B). Use P-4 (`#growthmindset #selfgrowth #becomingbetter`). ig-mcp URL: `https://raw.githubusercontent.com/exponentialgrowthformula/kmc-motivational/master/assets/staging/production/sr-pdh-grow-001.mp4`.
 3. **Analyst — pull 001-A 7-day read** — 2026-04-22.
 4. **Analyst — pull 001-C 24h read** — 2026-04-24 (after Format C publishes Apr 23).
-5. **Run Format C builds for 004–006** — configs exist in `scripts/configs/`. Trigger build-engineer subagent per content piece.
-6. **Content-003 Format A + B** — Designer to produce `scripts/slides-003/` HTML files. Publisher to select audio track (not perky-piano). Then Build Engineer runs `content-003-format-a.json` (to be created).
-7. **Content-002 Format A + B builds** — same pipeline dependency as above.
-8. **Asset sourcing** — DET + DIW prompts not yet developed; SNL/PDH/DFC/DWR gaps remain toward 52-image target.
-9. **Token refresh** — Access token valid until 2026-06-13. Refresh before that date. See `reference/ig-api-notes.md`.
+5. **Format C builds 004–007 DONE** — all staged in `assets/staging/production/`. See content entries above.
+6. **Format A + B Designer work (002–007)** — 6 pieces × 6 slides = 36 slide HTML files needed in `scripts/slides-002/` through `scripts/slides-007/`. Plus build configs per piece per format. Run builds sequentially (not parallel — OOM risk).
+7. **Content-003 Format A + B** — Designer to produce `scripts/slides-003/` HTML files. Publisher to select audio track (not perky-piano). Then Build Engineer runs `content-003-format-a.json` (to be created).
+8. **Content-002 Format A + B builds** — same pipeline dependency as above.
+9. **Downscale `bg-pdh-005-mid-glowup.jpg`** — currently 5412×8118, OOMs the cover compositor. Resize to ≤3000×4000 before next use in any build.
+10. **Asset sourcing** — DET + DIW prompts not yet developed; SNL/PDH/DFC/DWR gaps remain toward 52-image target.
+11. **Token refresh** — Access token valid until 2026-06-13. Refresh before that date. See `reference/ig-api-notes.md`.
 
 ---
 

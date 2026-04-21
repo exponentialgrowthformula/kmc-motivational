@@ -1,6 +1,6 @@
 # Hashtag Rotation Tracker
 **Owned by:** SEO Agent
-**Last updated:** 2026-04-20
+**Last updated:** 2026-04-21
 
 This document tracks all assigned hashtag sets (P-sets) across all published and scheduled content. Its purpose is to prevent hashtag overlap on content published within the same 7-day window, and to maintain a clear assignment record as the P-set library grows.
 
@@ -28,12 +28,13 @@ Refer to `seo/hashtag-sets.md` for the full tiered hashtag library. This documen
 | P-5 | `#personalgrowth #selfworth #innerwork #ownyourvalue` | content-002 Format C | sr-dfc-worth-002 | 2026-04-16 | Used |
 | P-6 | TBD — to be assigned by SEO Agent | content-001 Format B | cp-pdh-grow-001 | 2026-04-20 | **Pending assignment** |
 | P-7 | `#manifestation #abundancemindset #manifestationjournal` | content-003 Format C | sr-dfc-manif-003 | 2026-04-20 | Used |
+| P-8 | `#gratitude #gratitudepractice #positivemindset` | content-004 Format C | sr-dwr-grat-004 | 2026-04-21 | Used |
 
 ---
 
 ## Next Available P-Set
 
-**Next to assign:** P-8 (to be created by SEO Agent for next scheduled piece)
+**Next to assign:** P-9 (to be created by SEO Agent for next scheduled piece)
 
 When creating a new P-set:
 1. Add it to `seo/hashtag-sets.md` (tiered construction: broad + niche + micro)
@@ -54,6 +55,7 @@ Before finalizing any P-set assignment, confirm no overlap in the 7-day window a
 | 2026-04-20 | content-001 Format B | P-6 (TBD) |
 | 2026-04-20 | content-003 Format C | P-7 |
 | 2026-04-21 | content-002 Format A | TBD |
+| 2026-04-21 | content-004 Format C | P-8 |
 | 2026-04-23 | content-001 Format C | P-4 |
 
 Update this table whenever a new post is scheduled. The 7-day window runs from 7 days before to 7 days after each publish date.

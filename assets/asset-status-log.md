@@ -6,7 +6,7 @@
 
 **Rejected and removed background assets:** archived in `assets/background-asset-archive.md`
 
-**Status:** Active — content-001 A1/A2 (Format A) and content-002 C1/C2 (Format C) moved to `/assets/published/2026-04/instagram/` after publish confirmation. content-003 C1/C2 (Format C) moved to `/assets/published/2026-04/instagram/` after publish confirmation 2026-04-20. content-001 Format B (6 slides) and Format C remain in staging, scheduled for upcoming publish slots.
+**Status:** Active — content-001 A1/A2 (Format A) and content-002 C1/C2 (Format C) moved to `/assets/published/2026-04/instagram/` after publish confirmation. content-003 C1/C2 (Format C) moved to `/assets/published/2026-04/instagram/` after publish confirmation 2026-04-20. content-004 C1/C2 (Format C) moved to `/assets/published/2026-04/instagram/` after publish confirmation 2026-04-21. content-001 Format B (6 slides) and Format C remain in staging, scheduled for upcoming publish slots.
 
 ---
 
@@ -30,6 +30,8 @@ Assets produced for specific content pieces. Held in `/assets/staging/production
 | CPA-002-C2 | content-002 | Format C — Stacked Reveal Cover | `sr-dfc-worth-002-cover.jpg` | — | Published | 2026-04-16 | `/assets/published/2026-04/instagram/` | Published 2026-04-16 alongside CPA-002-C1. Background: BGI-DFC-001 (bg-dfc-001-glowing-tree.jpg). |
 | CPA-003-C1 | content-003 | Format C — Stacked Reveal Video | `sr-dfc-manif-003.mp4` | — | Published | 2026-04-20 | `/assets/published/2026-04/instagram/` | Published 2026-04-20. Media ID `17856363339650516`. Audio baked in: `perky-piano-512261`. Background: BGI-DFC-010 (bg-dfc-005-raking-light-forest.jpg). scrimOpacity 0.55, font-size 52px. Pillar: Manifestation. |
 | CPA-003-C2 | content-003 | Format C — Stacked Reveal Cover | `sr-dfc-manif-003-cover.jpg` | — | Published | 2026-04-20 | `/assets/published/2026-04/instagram/` | Published 2026-04-20 alongside CPA-003-C1. Media ID `17856363339650516`. |
+| CPA-004-C1 | content-004 | Format C — Stacked Reveal Video | `sr-dwr-grat-004.mp4` | — | Published | 2026-04-21 | `/assets/published/2026-04/instagram/` | Published 2026-04-21. Media ID `17905711623404988`. Audio baked in: `perky-piano-512261`. Background: BGI-DWR-007 (bg-dwr-004-rocky-shore-glow.jpg). scrimOpacity 0. Pillar: Gratitude. Hashtag set P-8. |
+| CPA-004-C2 | content-004 | Format C — Stacked Reveal Cover | `sr-dwr-grat-004-cover.jpg` | — | Published | 2026-04-21 | `/assets/published/2026-04/instagram/` | Published 2026-04-21 alongside CPA-004-C1. Media ID `17905711623404988`. |
 
 ---
 
