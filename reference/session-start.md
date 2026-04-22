@@ -1,7 +1,7 @@
 # Session Start — @exponentialgrowthformula_
 
 **Last updated:** 2026-04-21 (session-025)
-**Update this file at the end of every session.**
+**Update this file at the end of every session. In the Upcoming Triggers table: delete completed rows immediately — do not mark done, just remove the row. The table should only show pending actions.**
 
 ---
 
@@ -9,7 +9,7 @@
 
 | Date | Action |
 |---|---|
-| **2026-04-20** | Publisher — publish content-001 Format B carousel `cp-pdh-grow-001-slide-01..06.jpg`, add music in-app, use P-6 (slot 4) |
+| **DECISION NEEDED** | Strategy Director — Format B carousel publish blocked: Instagram API rejects 9:16 slides. Options: (1) rebuild at 4:5, (2) post manually in-app, (3) retire. See content-001 Format B blocker note. |
 | **2026-04-21** | Publisher — publish content-002 Format A (slot 5 — pipeline dependent) |
 | **2026-04-21** | Analyst — pull content-003 Format C 24h read (posted Apr 20) |
 | **2026-04-22** | Analyst — pull content-004 Format C 24h read (posted Apr 21) |
@@ -31,10 +31,12 @@
 | Format | Status | Files |
 |---|---|---|
 | Format A — Slide-Style Reel (`cr-`) | **PUBLISHED 2026-04-15** — Media ID `18077728049544507` | `cr-pdh-grow-001.mp4` → `/assets/published/2026-04/instagram/` |
-| Format B — Audio Carousel (`cp-`) | **READY — publish 2026-04-20** | `cp-pdh-grow-001-slide-01..06.jpg` → `/assets/staging/production/` |
+| Format B — Audio Carousel (`cp-`) | **BLOCKED — 9:16 slides not supported by Instagram carousel API** — see blocker note below | `cp-pdh-grow-001-slide-01..06.jpg` → `/assets/staging/production/` |
 | Format C — Stacked Reveal (`sr-`) | **READY — publish 2026-04-23** (AB-001 Variant B) | `sr-pdh-grow-001.mp4` → `/assets/staging/production/` |
 
 **Audio:** Format A + C have audio baked in — do not add a second track in-app. Format B requires in-app audio at post time (Reels tab eligibility). See `assets/staging/content-001-package-brief.md`.
+
+**Format B BLOCKER (2026-04-22):** Instagram Graph API rejects carousel creation with 9:16 (1080x1920) images — error code 100, subcode 2207023. API requires carousel slides to be 4:5 portrait (1080x1350) minimum. Current slides are built at 9:16 for visual consistency with Reels. Options: (1) Rebuild slides at 4:5 (1080x1350) and re-run build; (2) Post Format B manually via app (Instagram app allows 9:16 in-app carousel, API does not); (3) Retire Format B for this content piece. Strategy Director decision required. ig-mcp pydantic model fix also applied (removed invalid `@field_validator("image_url", "video_url")` from `PublishCarouselRequest`).
 
 **A/B test:** AB-001 measurement window started 2026-04-15. Format A vs Format C — total vibe package test. See `analytics/ab-test-brief-001.md`.
 
@@ -152,7 +154,7 @@ Line 7: The permission was always yours to give.
 
 ## Next Actions
 
-1. **Publish content-001 Format B** — 2026-04-20 (today). Carousel post (not Reel). Add music in-app. Use P-6. Move slides to `assets/published/2026-04/instagram/` after confirming live.
+1. **Content-001 Format B BLOCKED** — Instagram API rejects 9:16 carousel slides (error 100/2207023). Decision needed: rebuild at 4:5, post manually in-app, or retire. ig-mcp pydantic bug fixed. P-6 hashtags ready: `#personaldevelopment #selfimprovement #selfimprovementdaily`.
 2. **Publish content-001 Format C** — 2026-04-23 (AB-001 Variant B). Use P-4 (`#growthmindset #selfgrowth #becomingbetter`). ig-mcp URL: `https://raw.githubusercontent.com/exponentialgrowthformula/kmc-motivational/master/assets/staging/production/sr-pdh-grow-001.mp4`.
 3. **Analyst — pull 001-A 7-day read** — 2026-04-22.
 4. **Analyst — pull 001-C 24h read** — 2026-04-24 (after Format C publishes Apr 23).
@@ -211,6 +213,8 @@ Line 7: The permission was always yours to give.
 - **Build tools:** Node.js v24.13.1, FFmpeg v8.0.1, Playwright MCP. Python not installed — use `uv run`.
 - **Instagram Graph API:** Meta App configured. App ID `1710348726649294`, IG Account ID `17841479343890092`. Access token valid until **2026-06-13**. ig-mcp operational — Reel publish confirmed session-016.
 - **ig-mcp patch (session-016):** Two changes applied to `C:/Users/kirst/github/ig-mcp/src/instagram_client.py` — (1) `media_type=REELS` on video container creation, (2) `use_cache=False` on container status poll. NOT committed upstream — must be reapplied if ig-mcp is reinstalled.
+- **ig-mcp pydantic fix (2026-04-22):** `PublishCarouselRequest` in `src/models/instagram_models.py` had invalid `@field_validator("image_url", "video_url")` referencing non-existent fields. Removed. Model now loads correctly.
+- **Instagram carousel API constraint (confirmed 2026-04-22):** Instagram Graph API does NOT support 9:16 (1080x1920) images in carousel posts — error 100/2207023 on carousel container creation. API minimum is 4:5 portrait (1080x1350). The in-app Instagram carousel allows 9:16, but the API does not. All Format B slides must be built at 4:5 for API publishing. Alternative: post Format B manually via Instagram app.
 - **ig-mcp Reels metrics (session-020/021):** `ig_reels_avg_watch_time` and `ig_reels_video_view_total_time` are the operative Reels metrics. `plays` has been removed from Instagram Graph API v22.0+ — requesting it returns error #100. `video_views` also does not work for Reels. Implied plays = `ig_reels_video_view_total_time` ÷ `ig_reels_avg_watch_time`. Completion rate = `ig_reels_avg_watch_time (ms)` ÷ video duration (ms). Durations: 001-A ÷26400, 001-C (Variant B) ÷16800, 002-C ÷19076. NOT committed upstream.
 - **ig-mcp video URL:** `https://raw.githubusercontent.com/exponentialgrowthformula/kmc-motivational/master/assets/staging/production/<filename>` — org is `exponentialgrowthformula`, not `kirstiemc`.
 - **Account type:** Creator (not Business) — preserves music library access for Reels.
