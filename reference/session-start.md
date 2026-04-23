@@ -9,7 +9,7 @@
 
 | Date | Action |
 |---|---|
-| **DECISION NEEDED** | Strategy Director — Format B carousel publish blocked: Instagram API rejects 9:16 slides. Options: (1) rebuild at 4:5, (2) post manually in-app, (3) retire. See content-001 Format B blocker note. |
+| **DECISION NEEDED** | Strategy Director — Format B carousel publish blocked: Instagram Graph API has deprecated `CAROUSEL_ALBUM` media type — error 100/2207023 regardless of image dimensions. Confirmed 2026-04-22 via direct API testing. Slides rebuilt at 4:5 (1080×1350) are staged and ready. Options: (1) post manually via Instagram app (fully functional — recommended), (2) retire Format B. See `reference/ig-api-notes.md` for full diagnosis. |
 | **2026-04-21** | Publisher — publish content-002 Format A (slot 5 — pipeline dependent) |
 | **2026-04-21** | Analyst — pull content-003 Format C 24h read (posted Apr 20) |
 | **2026-04-22** | Analyst — pull content-004 Format C 24h read (posted Apr 21) |
@@ -31,12 +31,12 @@
 | Format | Status | Files |
 |---|---|---|
 | Format A — Slide-Style Reel (`cr-`) | **PUBLISHED 2026-04-15** — Media ID `18077728049544507` | `cr-pdh-grow-001.mp4` → `/assets/published/2026-04/instagram/` |
-| Format B — Audio Carousel (`cp-`) | **BLOCKED — 9:16 slides not supported by Instagram carousel API** — see blocker note below | `cp-pdh-grow-001-slide-01..06.jpg` → `/assets/staging/production/` |
+| Format B — Audio Carousel (`cp-`) | **BLOCKED — Instagram Graph API has deprecated `CAROUSEL_ALBUM` media type (error 100/2207023). Slides rebuilt at 4:5 (1080×1350) and staged. Manual in-app posting is the only viable path. Strategy Director decision required.** | `cp-pdh-grow-001-slide-01..06.jpg` → `/assets/staging/production/` |
 | Format C — Stacked Reveal (`sr-`) | **READY — publish 2026-04-23** (AB-001 Variant B) | `sr-pdh-grow-001.mp4` → `/assets/staging/production/` |
 
 **Audio:** Format A + C have audio baked in — do not add a second track in-app. Format B requires in-app audio at post time (Reels tab eligibility). See `assets/staging/content-001-package-brief.md`.
 
-**Format B BLOCKER (2026-04-22):** Instagram Graph API rejects carousel creation with 9:16 (1080x1920) images — error code 100, subcode 2207023. API requires carousel slides to be 4:5 portrait (1080x1350) minimum. Current slides are built at 9:16 for visual consistency with Reels. Options: (1) Rebuild slides at 4:5 (1080x1350) and re-run build; (2) Post Format B manually via app (Instagram app allows 9:16 in-app carousel, API does not); (3) Retire Format B for this content piece. Strategy Director decision required. ig-mcp pydantic model fix also applied (removed invalid `@field_validator("image_url", "video_url")` from `PublishCarouselRequest`).
+**Format B BLOCKER (updated 2026-04-22):** Instagram Graph API has deprecated `CAROUSEL_ALBUM` as a media type — error 100/2207023, message "The media type 'CAROUSEL_ALBUM' is unknown." Confirmed via direct API testing with correct token across API versions v19.0 and v22.0. This is NOT an aspect ratio issue — child container creation succeeds, carousel container creation fails regardless of image dimensions. Slides have been rebuilt at 4:5 (1080×1350) and are committed to GitHub master. The rebuild is complete. Only the publish path is blocked. Options: (1) Post manually via Instagram app (recommended — fully functional, app supports carousel even though API does not); (2) Retire Format B for API publishing. Strategy Director decision required. See `reference/ig-api-notes.md` for full diagnosis.
 
 **A/B test:** AB-001 measurement window started 2026-04-15. Format A vs Format C — total vibe package test. See `analytics/ab-test-brief-001.md`.
 
@@ -154,7 +154,7 @@ Line 7: The permission was always yours to give.
 
 ## Next Actions
 
-1. **Content-001 Format B BLOCKED** — Instagram API rejects 9:16 carousel slides (error 100/2207023). Decision needed: rebuild at 4:5, post manually in-app, or retire. ig-mcp pydantic bug fixed. P-6 hashtags ready: `#personaldevelopment #selfimprovement #selfimprovementdaily`.
+1. **Content-001 Format B BLOCKED — manual post required** — Instagram Graph API has deprecated `CAROUSEL_ALBUM` (error 100/2207023 — "media type unknown"). Confirmed 2026-04-22 via direct API testing. Slides rebuilt at 4:5 (1080×1350) are committed to GitHub master and staged. API publishing is not possible. Strategy Director decision: post manually via Instagram app or retire Format B. If posting manually: use caption from `content-briefs/content-brief-001.md` (em dashes removed — see caption below), P-6 hashtags: `#personaldevelopment #selfimprovement #selfimprovementdaily`. Add music in-app. See `reference/ig-api-notes.md`.
 2. **Publish content-001 Format C** — 2026-04-23 (AB-001 Variant B). Use P-4 (`#growthmindset #selfgrowth #becomingbetter`). ig-mcp URL: `https://raw.githubusercontent.com/exponentialgrowthformula/kmc-motivational/master/assets/staging/production/sr-pdh-grow-001.mp4`.
 3. **Analyst — pull 001-A 7-day read** — 2026-04-22.
 4. **Analyst — pull 001-C 24h read** — 2026-04-24 (after Format C publishes Apr 23).
